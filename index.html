@@ -48,60 +48,57 @@
 		}
 	</script>
 
-	< LINK media=a ll href="generic_style.css" type=t ext / css rel=s tylesheet>
-		< LINK media=p rint href="generic_print.css" type=t ext / css rel=s tylesheet>
+	<LINK media="all" href="generic_style.css" type="text/css" rel="stylesheet">
+	<LINK media="print" href="generic_print.css" type="text/css" rel="stylesheet">
+	<SCRIPT language="JavaScript" src="SlideOutMenus.js" type="text/javascript">
+	</SCRIPT>
+	<SCRIPT LANGUAGE="JavaScript">
+			// For id=verticalMenu there are 21 y-pixels per item in vertical menu.
+			// For minimum height use 22n+1 where n is number of entries in table.
+			// Define each menu name, type, position (x,y) and size (w,h)...
+			<!-- new SlideOutMenu("menu1", "right", 180, 366, 140, 50); -->  <!-- Shopping Program -->
+			new SlideOutMenu("menu2", "right", 180, 470, 180, 165); <!-- Activity Handouts -->
+			new SlideOutMenu("menu3", "right", 180, 219, 140, 120); <!-- Campout Forms -->
+			new SlideOutMenu("menu4", "right", 180, 408, 180, 120); <!-- Eagle Rank Information -->
+			new SlideOutMenu("menu5", "right", 180, 136, 160, 132); <!-- Merit Badges -->
+			new SlideOutMenu("menu6", "right", 180, 512, 160, 50); <!-- Troop Policies -->
+			new SlideOutMenu("menu7", "right", 180, 157, 180, 60); <!-- New Requirements -->
+	</SCRIPT>
 
-			< SCRIPT language=J avaScript src="SlideOutMenus.js" type=t ext / javascript>
-				</SCRIPT>
+	<SCRIPT LANGUAGE="JavaScript">
+		var slideShowSpeed = 5000; // Set slideShowSpeed (milliseconds)
+		var crossFadeDuration = 2; // Duration of crossfade (seconds)
+		var numPics = 30; // Number of pictures in slide show
+		var dirstr = 'pics/'; // Directory with picture files, named 1.jpg, 2.jpg, etc.
+		var t;
+		var i;
+		var j = 0;
+		var preLoad = new Array();
 
-				<SCRIPT LANGUAGE="JavaScript">
-					// For id=verticalMenu there are 21 y-pixels per item in vertical menu.
-					// For minimum height use 22n+1 where n is number of entries in table.
-					// Define each menu name, type, position (x,y) and size (w,h)...
-					<!-- new SlideOutMenu("menu1", "right", 180, 366, 140, 50); -->  <!-- Shopping Program -->
-					new SlideOutMenu("menu2", "right", 180, 470, 180, 165); <!-- Activity Handouts -->
-					new SlideOutMenu("menu3", "right", 180, 219, 140, 120); <!-- Campout Forms -->
-					new SlideOutMenu("menu4", "right", 180, 408, 180, 120); <!-- Eagle Rank Information -->
-					new SlideOutMenu("menu5", "right", 180, 136, 160, 132); <!-- Merit Badges -->
-					new SlideOutMenu("menu6", "right", 180, 512, 160, 50); <!-- Troop Policies -->
-					new SlideOutMenu("menu7", "right", 180, 157, 180, 60); <!-- New Requirements -->
-				</SCRIPT>
+		for (i = 0; i < numPics; i++) {
+			preLoad[i] = new Image();
+			preLoad[i].src = dirstr + (i + 1) + '.jpg';
+		}
 
-				<SCRIPT LANGUAGE="JavaScript">
-					var slideShowSpeed = 5000; // Set slideShowSpeed (milliseconds)
-					var crossFadeDuration = 2; // Duration of crossfade (seconds)
-					var numPics = 30; // Number of pictures in slide show
-					var dirstr = 'pics/'; // Directory with picture files, named 1.jpg, 2.jpg, etc.
-					var t;
-					var i;
-					var j = 0;
-					var preLoad = new Array();
-
-					for (i = 0; i < numPics; i++) {
-						preLoad[i] = new Image();
-						preLoad[i].src = dirstr + (i + 1) + '.jpg';
-					}
-
-					function runSlideShow() {
-						if (j < numPics) {
-							if (document.all) {
-								document.images.SlideShow.style.filter = "blendTrans(duration=crossFadeDuration)";
-								document.images.SlideShow.filters.blendTrans.Apply();
-							}
-							document.images.SlideShow.src = preLoad[j].src;
-							if (document.all) {
-								document.images.SlideShow.filters.blendTrans.Play();
-							}
-							t = setTimeout('runSlideShow()', slideShowSpeed);
-							j++;
-							// if (j == numPics) j = 0; // For a continuous loop, uncomment this line
-						} else { // Selects a random picture and stops the show...
-							j = Math.round(Math.random() * (numPics - 1));
-							document.images.SlideShow.src = preLoad[j].src;
-						}
-					}
-				</script>
-
+		function runSlideShow() {
+			if (j < numPics) {
+				if (document.all) {
+					document.images.SlideShow.style.filter = "blendTrans(duration=crossFadeDuration)";
+					document.images.SlideShow.filters.blendTrans.Apply();
+				}
+				document.images.SlideShow.src = preLoad[j].src;
+				if (document.all) {
+					document.images.SlideShow.filters.blendTrans.Play();
+				}
+				t = setTimeout('runSlideShow()', slideShowSpeed);
+				j++;
+				// if (j == numPics) j = 0; // For a continuous loop, uncomment this line
+			} else { // Selects a random picture and stops the show...
+				j = Math.round(Math.random() * (numPics - 1));
+				document.images.SlideShow.src = preLoad[j].src;
+			}
+		}
+		</script>
 </HEAD>
 
 <BODY onLoad="runSlideShow()">
