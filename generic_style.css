@@ -1,9 +1,9 @@
 BODY {
-	PADDING-RIGHT: 0px; 
-	PADDING-LEFT: 0px; 
-	PADDING-BOTTOM: 0px; 
-	MARGIN: 0px; 
-	PADDING-TOP: 0px; 
+	PADDING-RIGHT: 0px;
+	PADDING-LEFT: 0px;
+	PADDING-BOTTOM: 0px;
+	MARGIN: 0px;
+	PADDING-TOP: 0px;
 	FONT-FAMILY: Arial, Helvetica, sans-serif;
 }
 
@@ -18,54 +18,59 @@ H6 { COLOR: #000; }
 
 A:link { COLOR: #069; }
 A:visited { COLOR: #069; }
-A:hover { 
-	COLOR: #f90; 
+A:hover {
+	COLOR: #f90;
 	TEXT-DECORATION: none;
 }
 
+@viewport {
+  width: device-width ;
+  zoom: 1.0 ;
+}
+
 SPAN.redEmphasis {
-	FONT-WEIGHT: bold; 
+	FONT-WEIGHT: bold;
 	COLOR: #cc0000;
 }
 
 HR {
-	COLOR: #cccccc; 
+	COLOR: #cccccc;
 	HEIGHT: 1px;
 }
 
 /*----------- MENU BAR -----------*/
 
 TD.navbar P {
-	FONT-WEIGHT: bold; 
-	FONT-SIZE: 11px; 
-	BACKGROUND: #000; 
-	PADDING-BOTTOM: 2px; 
-	MARGIN: 0px; 
-	COLOR: #c0c0c0; 
+	FONT-WEIGHT: bold;
+	FONT-SIZE: 11px;
+	BACKGROUND: #000;
+	PADDING-BOTTOM: 2px;
+	MARGIN: 0px;
+	COLOR: #c0c0c0;
 	PADDING-TOP: 2px;
 }
 
 TD.navbar A:link {
-	PADDING-RIGHT: 2px; 
-	PADDING-LEFT: 2px; 
-	FONT-WEIGHT: normal; 
-	FONT-SIZE: 11px; 
-	PADDING-BOTTOM: 2px; 
-	COLOR: #fc9; 
-	PADDING-TOP: 2px; 
-	FONT-FAMILY: Verdana; 
+	PADDING-RIGHT: 2px;
+	PADDING-LEFT: 2px;
+	FONT-WEIGHT: normal;
+	FONT-SIZE: 11px;
+	PADDING-BOTTOM: 2px;
+	COLOR: #fc9;
+	PADDING-TOP: 2px;
+	FONT-FAMILY: Verdana;
 	TEXT-DECORATION: none;
 }
 
 TD.navbar A:visited {
-	PADDING-RIGHT: 2px; 
-	PADDING-LEFT: 2px; 
-	FONT-WEIGHT: normal; 
-	FONT-SIZE: 11px; 
-	PADDING-BOTTOM: 2px; 
-	COLOR: #fc9; 
-	PADDING-TOP: 2px; 
-	FONT-FAMILY: Verdana; 
+	PADDING-RIGHT: 2px;
+	PADDING-LEFT: 2px;
+	FONT-WEIGHT: normal;
+	FONT-SIZE: 11px;
+	PADDING-BOTTOM: 2px;
+	COLOR: #fc9;
+	PADDING-TOP: 2px;
+	FONT-FAMILY: Verdana;
 	TEXT-DECORATION: none;
 }
 
@@ -74,81 +79,81 @@ TD.navbar A:hover { COLOR: #fff; }
 /*--------  MAIN CONTENT ----------*/
 
 TD#content {
-	PADDING-RIGHT: 10%; 
-	PADDING-LEFT: 5%; 
-	PADDING-BOTTOM: 5%; 
+	PADDING-RIGHT: 10%;
+	PADDING-LEFT: 5%;
+	PADDING-BOTTOM: 5%;
 	PADDING-TOP: 4%;
 }
 
 TD#content P {
-	MARGIN-TOP: 4%; 
-	FONT-SIZE: 80%; 
-	COLOR: #333; 
+	MARGIN-TOP: 4%;
+	FONT-SIZE: 80%;
+	COLOR: #333;
 	FONT-FAMILY: Verdana, Helvetica, sans-serif;
 }
 
 TD#content TABLE { MARGIN-BOTTOM: 5%; }
 
 TD#content P#breadcrumb {
-	PADDING-RIGHT: 5px; 
-	PADDING-LEFT: 5px; 
-	BACKGROUND: #eaeaea; 
-	PADDING-BOTTOM: 5px; 
-	PADDING-TOP: 5px; 
+	PADDING-RIGHT: 5px;
+	PADDING-LEFT: 5px;
+	BACKGROUND: #eaeaea;
+	PADDING-BOTTOM: 5px;
+	PADDING-TOP: 5px;
 	FONT-FAMILY: Arial, Helvetica, sans-serif;
 }
 
 TD#content LI {
-	FONT-SIZE: 80%; 
-	COLOR: #333; 
+	FONT-SIZE: 80%;
+	COLOR: #333;
 	FONT-FAMILY: Verdana, Helvetica, sans-serif;
 }
 
 TD#content TD LI {
-	FONT-SIZE: 100%; 
-	COLOR: #333; 
+	FONT-SIZE: 100%;
+	COLOR: #333;
 	FONT-FAMILY: Arial, Helvetica, sans-serif;
 }
 
 TD#content H1 {
-	PADDING-BOTTOM: 0px; 
-	MARGIN: 0px; 
-	COLOR: #036; 
+	PADDING-BOTTOM: 0px;
+	MARGIN: 0px;
+	COLOR: #036;
 	FONT-FAMILY: Arial, Helvetica, sans-serif;
 }
 
 TD#content H2 {
-	PADDING-BOTTOM: 0px; 
-	MARGIN: 0px; 
-	COLOR: #036; 
+	PADDING-BOTTOM: 0px;
+	MARGIN: 0px;
+	COLOR: #036;
 	FONT-FAMILY: Arial, Helvetica, sans-serif;
 }
 
 TD#content H3 {
-	PADDING-BOTTOM: 0px; 
-	MARGIN: 0px; 
-	COLOR: #036; 
+	PADDING-BOTTOM: 0px;
+	MARGIN: 0px;
+	COLOR: #036;
 	FONT-FAMILY: Arial, Helvetica, sans-serif;
 }
 
 TD#content H4 {
-	PADDING-BOTTOM: 0px; 
-	MARGIN: 0px; 
+	PADDING-BOTTOM: 0px;
+	MARGIN: 0px;
 	COLOR: #036; ;
 	FONT-FAMILY: Arial, Helvetica, sans-serif;
 }
 
 TD#content H5 {
-	PADDING-BOTTOM: 0px; 
-	MARGIN: 0px; 
-	COLOR: #036; 
+	PADDING-BOTTOM: 0px;
+	MARGIN: 0px;
+	COLOR: #036;
 	FONT-FAMILY: Arial, Helvetica, sans-serif;
 }
 
 TD#content H6 {
-	PADDING-BOTTOM: 0px; 
-	MARGIN: 0px; 
-	COLOR: #036; 
+	PADDING-BOTTOM: 0px;
+	MARGIN: 0px;
+	COLOR: #036;
 	FONT-FAMILY: Arial, Helvetica, sans-serif;
 }
 
@@ -162,54 +167,54 @@ TD#content H4.subhead { PADDING-TOP: 15px; }
 TD#content H3.subhead { PADDING-TOP: 15px; }
 
 TD#content TD {
-	FONT-SIZE: 80%; 
+	FONT-SIZE: 80%;
 	FONT-FAMILY: Arial, Helvetica, sans-serif;
 }
 
 TD#content TD P {
-	FONT-SIZE: 100%; 
+	FONT-SIZE: 100%;
 	FONT-FAMILY: Arial, Helvetica, sans-serif;
 }
 
 TD#content P.boxed {
-	BORDER-RIGHT: #fc6 1px solid; 
-	PADDING-RIGHT: 7px; 
-	BORDER-TOP: #fc6 1px solid; 
-	PADDING-LEFT: 7px; 
-	FONT-SIZE: 80%; 
-	BACKGROUND: #ffc; 
-	PADDING-BOTTOM: 7px; 
-	BORDER-LEFT: #fc6 1px solid; 
-	COLOR: #000; 
-	PADDING-TOP: 7px; 
-	BORDER-BOTTOM: #fc6 1px solid; 
+	BORDER-RIGHT: #fc6 1px solid;
+	PADDING-RIGHT: 7px;
+	BORDER-TOP: #fc6 1px solid;
+	PADDING-LEFT: 7px;
+	FONT-SIZE: 80%;
+	BACKGROUND: #ffc;
+	PADDING-BOTTOM: 7px;
+	BORDER-LEFT: #fc6 1px solid;
+	COLOR: #000;
+	PADDING-TOP: 7px;
+	BORDER-BOTTOM: #fc6 1px solid;
 	FONT-FAMILY: Arial, Helvetica, sans-serif;
 }
 
 DIV#sidebar {
-	BACKGROUND: none transparent scroll repeat 0% 0%; 
-	FLOAT: right; 
-	MARGIN-BOTTOM: 2%; 
-	MARGIN-LEFT: 5%; 
-	WIDTH: 30%; 
+	BACKGROUND: none transparent scroll repeat 0% 0%;
+	FLOAT: right;
+	MARGIN-BOTTOM: 2%;
+	MARGIN-LEFT: 5%;
+	WIDTH: 30%;
 	MARGIN-RIGHT: 2px;
 }
 
 DIV#sidebar P {
-	MARGIN-TOP: 5%; 
-	FONT-SIZE: 75%; 
-	MARGIN-BOTTOM: 5%; 
-	PADDING-BOTTOM: 8px; 
-	COLOR: #666; 
-	LINE-HEIGHT: 110%; 
+	MARGIN-TOP: 5%;
+	FONT-SIZE: 75%;
+	MARGIN-BOTTOM: 5%;
+	PADDING-BOTTOM: 8px;
+	COLOR: #666;
+	LINE-HEIGHT: 110%;
 	FONT-FAMILY: Arial, Helvetica, sans-serif;
 }
 
 TD#content TD P.caption {
-	PADDING-LEFT: 10px; 
-	FONT-SIZE: 95%; 
-	MARGIN: 0px; 
-	COLOR: #069; 
+	PADDING-LEFT: 10px;
+	FONT-SIZE: 95%;
+	MARGIN: 0px;
+	COLOR: #069;
 	FONT-FAMILY: Arial, Helvetica, sans-serif;
 }
 
@@ -218,196 +223,196 @@ TD#content TD P.caption {
 DIV#verticalMenu { COLOR: transparent; }
 
 DIV#verticalMenu P {
-	BORDER-RIGHT: #c0c0c0 1px solid; 
-	PADDING-RIGHT: 0px; 
-	BORDER-TOP: #c0c0c0 1px solid; 
-	PADDING-LEFT: 0px; 
-	FONT-SIZE: 70%; 
-	BACKGROUND: none transparent scroll repeat 0% 0%; 
-	PADDING-BOTTOM: 0px; 
-	MARGIN: 2px 0px 2px 2px; 
-	BORDER-LEFT: #c0c0c0 1px solid; 
-	PADDING-TOP: 0px; 
-	BORDER-BOTTOM: #c0c0c0 1px solid; 
+	BORDER-RIGHT: #c0c0c0 1px solid;
+	PADDING-RIGHT: 0px;
+	BORDER-TOP: #c0c0c0 1px solid;
+	PADDING-LEFT: 0px;
+	FONT-SIZE: 70%;
+	BACKGROUND: none transparent scroll repeat 0% 0%;
+	PADDING-BOTTOM: 0px;
+	MARGIN: 2px 0px 2px 2px;
+	BORDER-LEFT: #c0c0c0 1px solid;
+	PADDING-TOP: 0px;
+	BORDER-BOTTOM: #c0c0c0 1px solid;
 	FONT-FAMILY: Verdana, Geneva, Arial, Helvetica, sans-serif;
 }
 
 DIV#verticalMenu A {
-	PADDING-RIGHT: 3px; 
-	DISPLAY: block; 
-	PADDING-LEFT: 3px; 
-	PADDING-BOTTOM: 2px; 
-	MARGIN: 0px; 
-	PADDING-TOP: 2px; 
+	PADDING-RIGHT: 3px;
+	DISPLAY: block;
+	PADDING-LEFT: 3px;
+	PADDING-BOTTOM: 2px;
+	MARGIN: 0px;
+	PADDING-TOP: 2px;
 	TEXT-DECORATION: none;
 }
 
 DIV#verticalMenu P.category {
-	PADDING-RIGHT: 3px; 
-	PADDING-LEFT: 3px; 
-	FONT-WEIGHT: bold; 
-	BACKGROUND: #8282AF; 
-	PADDING-BOTTOM: 2px; 
-	COLOR: #fff; 
-	PADDING-TOP: 2px; 
+	PADDING-RIGHT: 3px;
+	PADDING-LEFT: 3px;
+	FONT-WEIGHT: bold;
+	BACKGROUND: #8282AF;
+	PADDING-BOTTOM: 2px;
+	COLOR: #fff;
+	PADDING-TOP: 2px;
 	FONT-FAMILY: Arial, sans-serif;
 }
 
 DIV#verticalMenu A:link {
-	BACKGROUND: #e7e8fc; 
-	COLOR: #474774; 
+	BACKGROUND: #e7e8fc;
+	COLOR: #474774;
 	TEXT-DECORATION: none;
 }
 
 DIV#verticalMenu A:visited {
-	BACKGROUND: #e7e8fc; 
-	COLOR: #474774; 
+	BACKGROUND: #e7e8fc;
+	COLOR: #474774;
 	TEXT-DECORATION: none;
 }
 
 DIV#verticalMenu A:hover {
-	BACKGROUND: #fff; 
+	BACKGROUND: #fff;
 	COLOR: #000;
 }
 
 DIV#verticalMenu P.contact {
-	BORDER-RIGHT: #d5d4d4 1px solid; 
-	PADDING-RIGHT: 3px; 
-	BORDER-TOP: #d5d4d4 1px solid; 
-	PADDING-LEFT: 3px; 
-	FONT-SIZE: 70%; 
-	BACKGROUND: #e7e8fc; 
-	PADDING-BOTTOM: 2px; 
-	MARGIN: 2px 0px 2px 2px; 
-	BORDER-LEFT: #d5d4d4 1px solid; 
-	COLOR: #666; 
-	PADDING-TOP: 2px; 
-	BORDER-BOTTOM: #d5d4d4 1px solid; 
+	BORDER-RIGHT: #d5d4d4 1px solid;
+	PADDING-RIGHT: 3px;
+	BORDER-TOP: #d5d4d4 1px solid;
+	PADDING-LEFT: 3px;
+	FONT-SIZE: 70%;
+	BACKGROUND: #e7e8fc;
+	PADDING-BOTTOM: 2px;
+	MARGIN: 2px 0px 2px 2px;
+	BORDER-LEFT: #d5d4d4 1px solid;
+	COLOR: #666;
+	PADDING-TOP: 2px;
+	BORDER-BOTTOM: #d5d4d4 1px solid;
 	FONT-FAMILY: Verdana, Geneva, Arial, Helvetica, sans-serif;
 }
 
 DIV#verticalMenu A.contact {
-	PADDING-RIGHT: 3px; 
-	DISPLAY: block; 
-	PADDING-LEFT: 0px; 
-	PADDING-BOTTOM: 2px; 
-	MARGIN: 0px; 
-	PADDING-TOP: 2px; 
+	PADDING-RIGHT: 3px;
+	DISPLAY: block;
+	PADDING-LEFT: 0px;
+	PADDING-BOTTOM: 2px;
+	MARGIN: 0px;
+	PADDING-TOP: 2px;
 	TEXT-DECORATION: none;
 }
 
 FORM.search {
-	PADDING-RIGHT: 5px; 
-	PADDING-LEFT: 5px; 
-	BACKGROUND: #eaeaea; 
-	PADDING-BOTTOM: 5px; 
-	MARGIN: 0px; 
+	PADDING-RIGHT: 5px;
+	PADDING-LEFT: 5px;
+	BACKGROUND: #eaeaea;
+	PADDING-BOTTOM: 5px;
+	MARGIN: 0px;
 	PADDING-TOP: 5px;
 }
 
 FORM.search A {
-	DISPLAY: inline; 
+	DISPLAY: inline;
 	BACKGROUND: none transparent scroll repeat 0% 0%;
 }
 
 FORM.search A:link {
-	PADDING-RIGHT: 0px; 
-	PADDING-LEFT: 0px; 
-	FONT-SIZE: 11px; 
-	PADDING-BOTTOM: 0px; 
-	MARGIN: 0px; 
-	PADDING-TOP: 3px; 
-	FONT-FAMILY: Arial, Verdana, sans-serif; 
+	PADDING-RIGHT: 0px;
+	PADDING-LEFT: 0px;
+	FONT-SIZE: 11px;
+	PADDING-BOTTOM: 0px;
+	MARGIN: 0px;
+	PADDING-TOP: 3px;
+	FONT-FAMILY: Arial, Verdana, sans-serif;
 	TEXT-DECORATION: underline;
 }
 
 FORM.search A:visited {
-	PADDING-RIGHT: 0px; 
-	PADDING-LEFT: 0px; 
-	FONT-SIZE: 11px; 
-	PADDING-BOTTOM: 0px; 
-	MARGIN: 0px; 
-	PADDING-TOP: 3px; 
-	FONT-FAMILY: Arial, Verdana, sans-serif; 
+	PADDING-RIGHT: 0px;
+	PADDING-LEFT: 0px;
+	FONT-SIZE: 11px;
+	PADDING-BOTTOM: 0px;
+	MARGIN: 0px;
+	PADDING-TOP: 3px;
+	FONT-FAMILY: Arial, Verdana, sans-serif;
 	TEXT-DECORATION: underline;
 }
 
 FORM.search A:active {
-	PADDING-RIGHT: 0px; 
-	PADDING-LEFT: 0px; 
-	FONT-SIZE: 11px; 
-	PADDING-BOTTOM: 0px; 
-	MARGIN: 0px; 
-	PADDING-TOP: 3px; 
-	FONT-FAMILY: Arial, Verdana, sans-serif; 
+	PADDING-RIGHT: 0px;
+	PADDING-LEFT: 0px;
+	FONT-SIZE: 11px;
+	PADDING-BOTTOM: 0px;
+	MARGIN: 0px;
+	PADDING-TOP: 3px;
+	FONT-FAMILY: Arial, Verdana, sans-serif;
 	TEXT-DECORATION: underline;
 }
 
 FORM.search A:hover {
-	BACKGROUND: none transparent scroll repeat 0% 0%; 
-	COLOR: red; 
+	BACKGROUND: none transparent scroll repeat 0% 0%;
+	COLOR: red;
 	TEXT-DECORATION: none;
 }
 
 FORM.search P.searchHead {
-	PADDING-RIGHT: 0px; 
-	PADDING-LEFT: 0px; 
-	FONT-SIZE: 11px; 
-	PADDING-BOTTOM: 0px; 
-	MARGIN: 0px; 
-	COLOR: #336; 
-	PADDING-TOP: 0px; 
+	PADDING-RIGHT: 0px;
+	PADDING-LEFT: 0px;
+	FONT-SIZE: 11px;
+	PADDING-BOTTOM: 0px;
+	MARGIN: 0px;
+	COLOR: #336;
+	PADDING-TOP: 0px;
 	FONT-FAMILY: Arial, Helvetica, sans-serif;
 }
 
 P.footer {
-	PADDING-RIGHT: 4px; 
-	BORDER-TOP: #ccc 1px solid; 
-	MARGIN-TOP: 5px; 
-	PADDING-LEFT: 4px; 
-	FONT-SIZE: 60%; 
-	PADDING-BOTTOM: 20px; 
-	PADDING-TOP: 5px; 
+	PADDING-RIGHT: 4px;
+	BORDER-TOP: #ccc 1px solid;
+	MARGIN-TOP: 5px;
+	PADDING-LEFT: 4px;
+	FONT-SIZE: 60%;
+	PADDING-BOTTOM: 20px;
+	PADDING-TOP: 5px;
 	FONT-FAMILY: verdana, sans-serif;
 }
 
 P.footer1col {
-	PADDING-RIGHT: 4px; 
-	BORDER-TOP: #ccc 1px solid; 
-	MARGIN-TOP: 5px; 
-	PADDING-LEFT: 50px; 
-	FONT-SIZE: 60%; 
-	PADDING-BOTTOM: 20px; 
-	PADDING-TOP: 5px; 
+	PADDING-RIGHT: 4px;
+	BORDER-TOP: #ccc 1px solid;
+	MARGIN-TOP: 5px;
+	PADDING-LEFT: 50px;
+	FONT-SIZE: 60%;
+	PADDING-BOTTOM: 20px;
+	PADDING-TOP: 5px;
 	FONT-FAMILY: verdana, sans-serif;
 }
 
 DIV#Rightsidebar {
-	BACKGROUND: none transparent scroll repeat 0% 0%; 
-	FLOAT: right; 
-	MARGIN-BOTTOM: 2%; 
-	MARGIN-LEFT: 5%; 
-	WIDTH: 30%; 
+	BACKGROUND: none transparent scroll repeat 0% 0%;
+	FLOAT: right;
+	MARGIN-BOTTOM: 2%;
+	MARGIN-LEFT: 5%;
+	WIDTH: 30%;
 	MARGIN-RIGHT: 2px;
 }
 
 DIV#Rightsidebar P {
-	MARGIN-TOP: 5%; 
-	FONT-SIZE: 75%; 
-	MARGIN-BOTTOM: 5%; 
-	PADDING-BOTTOM: 8px; 
-	COLOR: #666; 
-	LINE-HEIGHT: 110%; 
+	MARGIN-TOP: 5%;
+	FONT-SIZE: 75%;
+	MARGIN-BOTTOM: 5%;
+	PADDING-BOTTOM: 8px;
+	COLOR: #666;
+	LINE-HEIGHT: 110%;
 	FONT-FAMILY: Arial, Helvetica, sans-serif;
 }
 
 DIV#Rightsidebar B { FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; }
 
 DIV#Rightsidebar P.Columntitle {
-	FONT-WEIGHT: bold; 
-	FONT-SIZE: 80%; 
-	PADDING-BOTTOM: 5px; 
-	COLOR: #000000; 
-	BORDER-BOTTOM: #666 1px solid; 
+	FONT-WEIGHT: bold;
+	FONT-SIZE: 80%;
+	PADDING-BOTTOM: 5px;
+	COLOR: #000000;
+	BORDER-BOTTOM: #666 1px solid;
 	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
 }
