@@ -3,7 +3,7 @@ version: 0.1
 phases:
   post_build:
     commands:
-      - aws --region us-east-1 s3 sync ./dist/ s3://qa.troop161shoreham.org/ --acl=public-read --delete
+      - aws --region us-east-1 s3 sync ./Troop161_Web/dist/ s3://qa.troop161shoreham.org/ --acl=public-read --delete
 
 artifacts:
   files:
