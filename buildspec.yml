@@ -18,5 +18,6 @@ phases:
       - bash sync-s3-static.sh codepipeline-us-east-1-394769782722 Troop161_Web/dist qa.troop161shoreham.org /tmp /tmp/website CLEAN
 artifacts:
   files:
-    - build*/**
+    - **/*
+  name: qa-troop161shoreham-org-$(date +%Y-%m-%d)
 discard-paths: yes
