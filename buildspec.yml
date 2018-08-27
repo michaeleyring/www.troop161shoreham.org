@@ -4,7 +4,6 @@ phases:
   install:
     commands:
       - echo Entering install phase...
-      - sudo apt-get update -y
       - sudo apt-get install zip -y
       - sudo apt-get install awscli -y
   pre_build:
