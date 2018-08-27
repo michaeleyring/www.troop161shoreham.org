@@ -1,12 +1,14 @@
-version: 0.1
+version: 0.2
 
 phases:
   install:
+    commands:
       - echo Entering install phase...
       - sudo apt-get update -y
       - sudo apt-get install zip -y
       - sudo apt-get install awscli -y
   pre_build:
+    commands:
       - echo Entering pre_build phase...
       - aws s3 rm s3://codepipeline-us-east-1-394769782722/Troop161_Web/dist/*.zip
       - curl -LJO https://raw.githubusercontent.com/michaeleyring/sync-s3-static/master/sync-s3-static.sh
