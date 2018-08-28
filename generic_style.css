@@ -178,13 +178,25 @@ TD#content P.boxed {
 	PADDING-LEFT: 7px;
 	FONT-SIZE: 80%;
 	BACKGROUND: #ffc;
-	PADDING-BOTTOM: 7px;
+	PADDING-BOTTOM: 5px;
 	BORDER-LEFT: #fc6 1px solid;
 	COLOR: #000;
-	PADDING-TOP: 7px;
+	PADDING-TOP: 5px;
 	BORDER-BOTTOM: #fc6 1px solid;
 	FONT-FAMILY: Arial, Helvetica, sans-serif;
 }
+
+TD#content P.unboxed {
+	PADDING-RIGHT: 7px;
+	PADDING-LEFT: 7px;
+	FONT-SIZE: 80%;
+	BACKGROUND: #ffc;
+	PADDING-BOTTOM: 5px;
+	COLOR: #000;
+	PADDING-TOP: 0px;
+	FONT-FAMILY: Arial, Helvetica, sans-serif;
+}
+
 
 DIV#sidebar {
 	BACKGROUND: none transparent scroll repeat 0% 0%;
