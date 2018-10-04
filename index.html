@@ -1,6 +1,7 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
-<html  xml:lang="en-US" lang="en-US" xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
 <head>
+  <meta charset="utf-8">
 	<title>Boy Scout Troop 161 Shoreham</title>
 	<meta id="MetaDescription" name="DESCRIPTION" content="Boy Scout Troop 161 Shoreham, NY website" />
 	<meta id="MetaKeywords" name="KEYWORDS" />
@@ -11,11 +12,11 @@
 	<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
 	<meta name="keywords" content="Troop 161, Troop 161 Shoreham, Boy Scouts, Boy scout, BSA, scouting, scouts,
 	Boy Scouts of America, outdoors, camping, backpacking, hiking, fitness,
-	Philmont, Seabase, Troop 161, Shoreham, Benjamin Tallmadge district, Suffolk County, Suffolk County Council">
-	<meta name="description" content="Boy Scouts of America Troop 161">
+    Philmont, Seabase, Troop 161, Shoreham, Benjamin Tallmadge district, Suffolk County, Suffolk County Council">
+  <meta name="description" content="Boy Scouts of America Troop 161">
 
-	<!-- Facebook metadata -->
-	<meta property="og:url"           content="https://www.troop161shoreham.org/index.html" />
+  <!-- Facebook metadata -->
+  <meta property="og:url"           content="https://www.troop161shoreham.org/index.html" />
   <meta property="og:type"          content="website" />
   <meta property="og:title"         content="Boy Scout Troop 161 Shoreham" />
   <meta property="og:description"   content="Boy Scout Troop 161 website for Shoreham, NY. Part of the Benjamin Tallmadge district and Suffolk Country Council of the Boys Scouts of America." />
@@ -121,672 +122,183 @@
 	  fjs.parentNode.insertBefore(js, fjs);
 	}(document, 'script', 'facebook-jssdk'));</script>
 
-	<!-- Stylesheet setup for print and no print -->
-	<LINK media="all" href="generic_style.css" type="text/css" rel="stylesheet">
-	<LINK media="print" href="generic_print.css" type="text/css" rel="stylesheet">
 
-	<SCRIPT language="JavaScript" src="SlideOutMenus.js" type="text/javascript">
-	</SCRIPT>
-	<SCRIPT LANGUAGE="JavaScript">
-			// For id=verticalMenu there are 21 y-pixels per item in vertical menu.
-			// For minimum height use 22n+1 where n is number of entries in table.
-			// Define each menu name, type, position (x,y) and size (w,h)...
-			<!-- new SlideOutMenu("menu1", "right", 180, 366, 140, 50); -->  <!-- Shopping Program -->
-			new SlideOutMenu("menu2", "right", 180, 470, 180, 165); <!-- Activity Handouts -->
-			new SlideOutMenu("menu3", "right", 180, 219, 140, 120); <!-- Campout Forms -->
-			new SlideOutMenu("menu4", "right", 180, 408, 180, 120); <!-- Eagle Rank Information -->
-			new SlideOutMenu("menu5", "right", 180, 136, 160, 132); <!-- Merit Badges -->
-			new SlideOutMenu("menu6", "right", 180, 512, 160, 50); <!-- Troop Policies -->
-			new SlideOutMenu("menu7", "right", 180, 157, 180, 60); <!-- New Requirements -->
-	</SCRIPT>
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
 
-	<SCRIPT LANGUAGE="JavaScript">
-		var slideShowSpeed = 5000; // Set slideShowSpeed (milliseconds)
-		var crossFadeDuration = 2; // Duration of crossfade (seconds)
-		var numPics = 30; // Number of pictures in slide show
-		var dirstr = 'pics/'; // Directory with picture files, named 1.jpg, 2.jpg, etc.
-		var t;
-		var i;
-		var j = 0;
-		var preLoad = new Array();
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Poppins:300,400,500,700" rel="stylesheet">
 
-		for (i = 0; i < numPics; i++) {
-			preLoad[i] = new Image();
-			preLoad[i].src = dirstr + (i + 1) + '.jpg';
-		}
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-		function runSlideShow() {
-			if (j < numPics) {
-				if (document.all) {
-					document.images.SlideShow.style.filter = "blendTrans(duration=crossFadeDuration)";
-					document.images.SlideShow.filters.blendTrans.Apply();
-				}
-				document.images.SlideShow.src = preLoad[j].src;
-				if (document.all) {
-					document.images.SlideShow.filters.blendTrans.Play();
-				}
-				t = setTimeout('runSlideShow()', slideShowSpeed);
-				j++;
-				// if (j == numPics) j = 0; // For a continuous loop, uncomment this line
-			} else { // Selects a random picture and stops the show...
-				j = Math.round(Math.random() * (numPics - 1));
-				document.images.SlideShow.src = preLoad[j].src;
-			}
-		}
-		</script>
-</HEAD>
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
 
-<BODY onLoad="runSlideShow()">
-	<A name=top></A>
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
 
-	<!--NAV DHTML BEGIN-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" type="text/javascript"></script>
 
-	<!-- Activity Handouts -->
-	<div id="menu2Container">
-		<div id="menu2Content">
-			<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0 bgColor=#ffffff>
-				<TR>
-					<TD class=printhide vAlign=top>
-						<DIV id=verticalMenu style="margin-right: 1">
-							<p><a href="docs/Troop161_PlanningCalendar_2019_8-13-18.pdf">Calendar of Events </a></p>
-						</DIV>
-					</TD>
-				</TR>
-			</TABLE>
-		</div>
-	</div>
+</head>
 
-	<!-- Campout Forms -->
-	<div id="menu3Container">
-		<div id="menu3Content">
-			<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0 bgColor=#ffffff>
-				<TR>
-					<TD class=printhide vAlign=top>
-						<DIV id=verticalMenu style="margin-right: 1">
-							<P>
-								<A href="docs/patrolmenu.pdf">Patrol Menu</A>
-							</P>
-							<P>
-								<A href="docs/CAMPSITEDutyRoster.pdf">Duty Roster</A>
-							</P>
-							<P>
-								<A href="docs/CAMPSITE_INSPECTION_CHECKLIST.pdf">Inspection Checklist</A>
-							</P>
-							<P>
-								<A href="docs/CAMPSITESetup.pdf">Campsite Setup</A>
-							</P>
-							<P>
-								<A href="docs/CAMPSITEBreakdown.pdf">Campsite Breakdown</A>
-							</P>
-						</DIV>
-					</TD>
-				</TR>
-			</TABLE>
-		</div>
-	</div>
+<body>
 
+  <!--==========================
+  Header
+  ============================-->
+  <header id="header">
+    <div class="container">
 
-	<!-- Eagle Rank Information -->
-	<div id="menu4Container">
-		<div id="menu4Content">
-			<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0 bgColor=#ffffff>
-				<TR>
-					<TD class=printhide vAlign=top>
-						<DIV id=verticalMenu style="margin-right: 1">
-							<p><a href="docs/LifeScoutLetter.pdf" target="_blank">Life Scout Letter</a></p>
-							<p><a href="https://filestore.scouting.org/filestore/pdf/512-728_WB_fillable.pdf" target="_blank">Eagle Rank Application</a></p>
-							<P>
-								<A href="http://www.eaglescout.org/project/eagleprj.html" target="_blank">Eagle Project Planning Guide</A>
-							</P>
-							<P>
-								<A href="https://filestore.scouting.org/filestore/pdf/512-927_fillable.pdf" target="_blank">Eagle Project Workbook</A>
-							</P>
-							<P>
-								<A href="docs/eagle_scout_reference_form.pdf" target="_blank">Eagle Scout References Form</A>
-							</P>
-						</DIV>
-					</TD>
-				</TR>
-			</TABLE>
-		</div>
-	</div>
+      <div id="logo" class="pull-left">
+        <!--  <a href="#hero"><img src="img/bsa-logo5.png" alt="" title="" /></img></a> -->
+        <!-- Uncomment below if you prefer to use a text logo -->
+          <p class="nav-menu" font-size="18px"><a href="#hero"><b>Boy Scout Troop 161 Shoreham, NY</b></a></p>
+     
+      </div>
 
+      <nav id="nav-menu-container" background="red">
+        <ul class="nav-menu">
+          <li class="menu-active"><a href="#hero">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#events">Events</a></li>
+          <li><a href="#camping">Camping</a></li>
+          <li><a href="#eagle">Eagle Scouts</a></li>
+         <!-- <li><a href="#team">Team</a></li> --> 
+          <li class="menu-has-children"><a href="">Resources</a>
+            <ul>
+              <li class="menu-has-children"><a href="#">BSA Resources</a>
+                <ul>
+                  <li><a href="http://www.btdistrict.org/" target="_blank">Benjamin Tallmadge District</a></li>
+                  <li><a href="https://www.sccbsa.org/" target="_blank">Suffolk County Council</a></li>
+                  <li><a href="https://www.scouting.org/" target="_blank">National Council</a></li>
+                </ul>
+              </li>
+              <li class="menu-has-children"><a href="#">Scout Camps</a>
+                <ul>
+                  <li><a href="https://www.sccbsa.org/bhsc" target="_blank">Baiting Hollow Scout Camp</a></li>
+                  <li><a href="https://www.yawgoog.org/" target="_blank">Camp Yawgoog</a></li>
+                </ul>
+              </li>
+              <li class="menu-has-children"><a href="#">High Adventure Bases</a>
+                <ul>
+                  <li><a href="http://www.bsaseabase.org/" target="_blank">Sea Base</a></li>
+                  <li><a href="http://philmontscoutranch.org/" target="_blank">Philmont Scout Ranch</a></li>
+                  <li><a href="http://www.ntier.org/" target="_blank">Northern Tier Base</a></li>
+                  <li><a href="http://www.summitbsa.org/" target="_blank">Summit Bechtel Reserve</a></li>
+                </ul>
+              </li>
+              <li class="menu-has-children"><a href="#">Eagle Rank Information</a>
+                <ul>
+                  <li><a href="docs/LifeScoutLetter.pdf" target="_blank">Life Scout Letter</a></li>
+                  <li><a href="https://filestore.scouting.org/filestore/pdf/512-728_WB_fillable.pdf" target="_blank">Eagle Rank Application</a></li>
+                  <li><a href="http://www.eaglescout.org/project/eagleprj.html" target="_blank">Eagle Project Planning Guide</a></li>
+                  <li><a href="https://filestore.scouting.org/filestore/pdf/512-927_fillable.pdf" target="_blank">Eagle Project Workbook</a></li>
+                  <li><a href="docs/eagle_scout_reference_form.pdf" target="_blank">Eagle Scout References Form</a></li>
+                </ul>
+              </li>
+              <li class="menu-has-children"><a href="#">Leadership</a>
+                <ul>
+                  <li><a href="docs/Leadership.pdf" target="_blank">Applying for a Leadership Position</a></li>
+                  <li><a href="docs/LeadershipcardstR7.doc" target="_blank">Leadership Cards</a></li>
+                  <li><a href="docs/LeaderHist.pdf" target="_blank">Leadership History</a></li>
+                </ul>
+              </li>
+              <li class="menu-has-children"><a href="#">Campout Forms</a>
+                <ul>
+                  <li><a href="docs/patrolmenu.pdf" target="_blank">Patrol Menu</a></li>
+                  <li><a href="docs/CAMPSITEDutyRoster.pdf" target="_blank">Duty Roster</a></li>
+                  <li><a href="docs/CAMPSITE_INSPECTION_CHECKLIST.pdf" target="_blank">Inspection Checklist</a></li>
+                  <li><a href="docs/CAMPSITESetup.pdf" target="_blank">Campsite Setup</a></li>
+                  <li><a href="docs/CAMPSITEBreakdown.pdf" target="_blank">Campsite Breakdown</a></li>
+                </ul>
+              </li>
+              <li class="menu-has-children"><a href="#">Merit Badge</a>
+                <ul>
+                  <li><a href="docs/MeritBadgeFactSheet.pdf" target="_blank">For Parents: Fact Sheet</a></li>
+                  <li><a href="docs/MeritBadgeCounselorInfo.pdf" target="_blank">Be a Counselor</a></li>
+                  <li><a href="docs/MeritBadgeCounselor.pdf" target="_blank">Merit Badge Counselor Application</a></li>
+                  <li><a href="docs/ScoutMeritBadgeInfo.pdf" target="_blank">Instructions for Scouts</a></li>
+                  <li><a href="http://www.meritbadge.com/" target="_blank">Merit Badge Web Site</a></li>
+                </ul>
+              </li>
+              <li><a href="https://www.scouter.com/">Scouter Network</a></li>
+            </ul>
+          </li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-	<!-- Merit Badges -->
-	<div id="menu5Container">
-		<div id="menu5Content">
-			<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0 bgColor=#ffffff>
-				<TR>
-					<TD class=printhide vAlign=top>
-						<DIV id=verticalMenu style="margin-right: 1">
-							<P>
-								<A href="docs/MeritBadgeFactSheet.pdf">For Parents: Fact Sheet</a>
-							</p>
-							<P>
-								<A href="docs/MeritBadgeCounselorInfo.pdf">Be a Counselor</A>
-							</P>
-							<P>
-								<A href="docs/MeritBadgeCounselor.pdf" target="_blank">Merit Badge Counselor Application Form</A>
-							</P>
-							<P>
-								<A href="docs/ScoutMeritBadgeInfo.pdf">Instructions for Scouts</A>
-							</P>
-							<P>
-								<A href="http://www.meritbadge.com/" target="_blank">Merit Badge Web Site</A>
-							</P>
-						</DIV>
-					</TD>
-				</TR>
-			</TABLE>
-		</div>
-	</div>
+  <!--  Hero Section -->
+  <section id="hero">
+      <p/>
+    <div class="hero-container">
+        <p/><p/><p/>
+      <h1 style="color:red">Troop 161, Shoreham NY</h1>
+            
+      <a href="#about" class="btn-get-started">Learn More</a>
+        <p/>
+        <p class="nav-menu" style="color:white; padding-left:40px; padding-right:40px">This site is is colored red as part of our Red Ribbon campaign in memory and in support of our fallen Scout, Andrew McMorris. Andrew succumbed to his injuries following a vehicle related incident while hiking.<br>We offer our deepest condolences to the McMorris family and are hanging red ribbons throughout the community in memory of Andrew.</p>
+<p/>
+        <p style="color:white; padding-left:40px; padding-right:40px margin: 0 0 0px 0;"><b>A message from the <a href="https://www.facebook.com/permalink.php?story_fbid=705097253182635&id=100010470993993" style="color:indianred"> McMorris</a> family:</b></p>
+        <p  class="nav-menu" style="color:white; padding-left:40px; padding-right:40px"><i>We have been advised that some people have placed items at the scene of the accident. We ask that you not do so. Andrew and the other injured Scouts are no longer there. We ask that you remember Andrew in your hearts, and not at the scene. It would be an unspeakable tragedy for another person to be injured on the roadside. In Andrew’s memory we ask for prayer, and if you feel the need to do something then tie a red ribbon on your property, and treat others with kindness in his name. </p>
+        <p/>
+        <p class="nav-menu" style="color:white; padding-left:40px; padding-right:40px">In lieu of flowers the family suggests donations to honor the loving memory of Andrew to support the following organizations:</i></p>
+    
+                    <li style="color:white" padding-top="0px" padding-bottom="0px">Troop 161 Memorial & Support Fund at <a href="https://www.gofundme.com/troop161-andrew-memorial-and-support" style="color:indianred" ><u>gofundme</u></a></li>
+                <li style="color:white">Wildcats Helping the Arts & Music Payable to: WHAM PO Box 458 Shoreham, NY 11786</li>
+                <li style="color:white"><a href="https://www.madd.org/new-york/donate/" style="color:indianred"><u>Mothers Against Drunk Driving (MADD)</u></a>, 33 Walt Whitman Road, Suite 210W Huntington Station, NY 11746
+</p>
+    <p class="nav-menu" style="color:white;">A document on managing the stress of a traumatic event is included <a href="https://www.troop161shoreham.org/docs/Trauma_in_Children_9-2018.docx" style="color:indianred"><u>here</u></a>
 
+    </div>
+  </section>
 
-	<!-- Troop Policies -->
-	<div id="menu6Container">
-		<div id="menu6Content">
-			<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0 bgColor=#ffffff>
-				<TR>
-					<TD class=printhide vAlign=top>
-						<DIV id=verticalMenu style="margin-right: 1">
-							<p><a href="docs/participation.pdf">Participation Policy</a></p>
-							<p><a href="docs/TentPolicy.pdf">Tent Policy</a></p>
-						</DIV>
-					</TD>
-				</TR>
-			</TABLE>
-		</div>
-	</div>
+  <main id="main">
 
+    <!--==========================
+      About Us Section
+    ============================-->
+    <section id="about">
+      <div class="container">
+        <div class="row about-container">
+          <div class="col-lg-6 content order-lg-1 order-2">
+            <h2 class="title">About Us</h2>
+            <p>
+              Troop 161 was first chartered in 1958, and is currently supported by the Shoreham Fire Company .  Meetings are held at 7:30 P.M. on Wednesday evenings at the Robert E. Reid, Sr. Recreation Center, Route 25A, Shoreham.  The Troop typically has about 60 to 70 boys.  Our activities include high adventure trips (week long canoe trips, white water rafting, backpacking, skiing, and others) as well as local camping and hiking.  The Troop goes to summer camp at Camp Yawgoog in Rhode Island.
+            </p>
 
-	<!-- New Requirements -->
-	<div id="menu7Container">
-		<div id="menu7Content">
-			<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0 bgColor=#ffffff>
-				<TR>
-					<TD class=printhide vAlign=top>
-						<DIV id=verticalMenu style="margin-right: 1">
-							<P>
-								<A href="docs/2016BoyScoutrequirementsFAQs.pdf" target="_blank">2016 Requirements FAQ</a>
-							</p>
-							<P>
-								<A href="docs/2016vs15Requirements.pdf" target="_blank">2015 vs 2016 Requirements</A>
-							</P>
-						</DIV>
-					</TD>
-				</TR>
-			</TABLE>
-		</div>
-	</div>
+            <div class="icon-box wow fadeInUp">
+              <div class="icon"><i class="fa fa-shopping-bag"></i></div>
+              <h4 class="title"><a href="">The Scout Oath</a></h4>
+              <p class="description">On my honor I will do my best to do my duty to God and my country and to obey the Scout Law; to help other people at all times; to keep myself physically strong, mentally awake, and morally straight.</p>
+            </div>
 
+            <div class="icon-box wow fadeInUp" data-wow-delay="0.2s">
+              <div class="icon"><i class="fa fa-photo"></i></div>
+              <h4 class="title"><a href="">The Scout Law</a></h4>
+              <p class="description">A Scout is: Trustworthy, Loyal, Helpful, Friendly, Courteous, Kind, Obedient, Cheerful, Thrifty, Brave, Clean, and Reverent.</p>
+            </div>
+ 
+            <div class="icon-box wow fadeInUp" data-wow-delay="0.2s">
+              <div class="icon"><i class="fa fa-photo"></i></div>
+              <h4 class="title"><a href="">Scout Master</a></h4>
+              <p class="description">The Troop 161 Scout Master is Matthew Yakaboski.</p>
+            </div>
 
-	<!--NAV DHTML END-->
+          </div>
 
-	<TABLE id=banner class=printhide cellSpacing=0 cellPadding=0 width=100% bgColor=#006600 border=0>
-		<TBODY>
-			<TR>
-				<TD>
-					<IMG alt="T161 Homepage" src="img/t161banner.gif" border=0 align="left">
-				</TD>
-			</TR>
-		</TBODY>
-	</TABLE>
-
-	<TABLE cellSpacing=0 cellPadding=0 width=100% border=0 bgcolor=0>
-		<TR class=printhide>
-			<TD class=navbar vAlign=top width=180>
-				<P align=right>Links:&nbsp;&nbsp;</P>
-			</TD>
-			<TD class=navbar vAlign=top>
-				<p>
-					<A href="http://www.btdistrict.org/" target="_blank">Benjamin Tallmadge District</A>&nbsp; |&nbsp;
-					<A href="https://www.sccbsa.org/" target="_blank">Suffolk County Council</A>&nbsp; |&nbsp;
-					<A href="https://www.scouting.org/" target="_blank">National Council</A>&nbsp; |&nbsp;
-					<A href="http://philmontscoutranch.org/" target="_blank">Philmont</A>&nbsp; |&nbsp;
-					<A href="http://www.bsaseabase.org/" target="_blank">Sea Base</A>&nbsp; |&nbsp;
-					<A href="https://www.sccbsa.org/bhsc" target="_blank">Baiting Hollow</A>&nbsp; |&nbsp;
-					<A href="https://www.yawgoog.org/" target="_blank">Camp Yawgoog</A>
-				</P>
-			</TD>
-		</TR>
-	</table>
-
-	<TABLE cellSpacing=0 cellPadding=0 width=780 border=0>
-		<TR>
-			<TD class=printhide vAlign=top width=180>
-				<DIV id=verticalMenu>
-
-					<p>
-						<A href="http://www.btdistrict.org/" target="_blank">Benjamin Tallmadge District</A>
-						<P>
-							<A href="https://www.sccbsa.org/" target="_blank">Suffolk County Council</A>
-							<P>
-								<A href="https://www.scouting.org/" target="_blank">National Council</A>
-								<P>
-									<IMG src="img/menu_arrow.gif" style="margin-top: 5px; margin-right: 3px;" align="right">
-									<A href="docs/MeritBadgeFactSheet.pdf" onMouseOver="SlideOutMenu.showMenu('menu5')
-         " onMouseOut="SlideOutMenu.hideMenu('menu5')"><b>Merit Badge Information</b></A>
-								</P>
-
-								<P>
-									<IMG src="img/menu_arrow.gif" style="margin-top: 5px; margin-right: 3px;" align="right">
-									<A href="docs/2016BoyScoutrequirementsFAQs.pdf" onMouseOver="SlideOutMenu.showMenu('menu7')
-         " onMouseOut="SlideOutMenu.hideMenu('menu7')">New Rank Requirements</A>
-								</P>
-
-								<!-- ****** Site Links ****** -->
-								<P class=category>Site Links</P>
-								<P>
-									<A href="docs/permissionslip.pdf">Permission Slip</A>
-								</P>
-								<P>
-									<A href="docs/AdultConsentForm.pdf">Adult Consent Form</A>
-								</P>
-								<P>
-									<IMG src="img/menu_arrow.gif" style="margin-top: 5px; margin-right: 3px;" align="right">
-									<A href="docs/patrolmenu.pdf" onMouseOver="SlideOutMenu.showMenu('menu3')" onMouseOut="SlideOutMenu.hideMenu('menu3')">Campout Forms</A>
-								</P>
-
-								<P>
-									<A href="docs/eventguide.pdf">Event Planning Guide</A>
-								</P>
-								<P>
-									<A href="docs/checklist.pdf">Equipment Checklist</A>
-								</P>
-								<P>
-									<A href="docs/equipment.pdf">Equipment Buying Guide</A>
-								</P>
-								<P>
-									<A href="docs/CarWashTickets.doc">Car Wash Tickets</A>
-								</P>
-								<p><a href="docs/CarWashSignUp.doc">Car Wash Sign Up Sheet</a></p>
-								<P>
-									<A href="docs/scoutgifts.pdf">Holiday Gift Ideas</A>
-								</P>
-								<p><a href="docs/LifeScoutLetter.pdf" target="_blank">Life Scout Letter</a></p>
-								<P>
-									<IMG src="img/menu_arrow.gif" style="margin-top: 5px; margin-right: 3px;" align="right">
-									<A href="docs/LifeScoutLetter.pdf" onMouseOver="SlideOutMenu.showMenu('menu4')" onMouseOut="SlideOutMenu.hideMenu('menu4')" target="_blank">Eagle Rank Information</A>
-								</P>
-
-								<!-- ****** Troop Information ****** -->
-								<P class=category>Troop Information</P>
-								<P><span title="Updated 8/13/18"><A href="docs/Troop161_PlanningCalendar_2019_8-13-18.pdf"><b>Calendar of Events</b></A></span></P>
-
-								<P>
-									<IMG src="img/menu_arrow.gif" style="margin-top: 5px; margin-right: 3px;" align="right">
-									<A href="docs/Troop161_PlanningCalendar_2019_8-13-18.pdf" onMouseOver="SlideOutMenu.showMenu('menu2')" onMouseOut="SlideOutMenu.hideMenu('menu2')">Activity Handouts</A>
-								</P>
-
-								<P>
-									<A href="alumni.html">Troop 161 Eagle Scouts</A>
-								</P>
-
-								<P>
-									<IMG src="img/menu_arrow.gif" style="margin-top: 5px; margin-right: 3px;" align="right">
-									<A href="docs/participation.pdf" onMouseOver="SlideOutMenu.showMenu('menu6')" onMouseOut="SlideOutMenu.hideMenu('menu6')"><b>Troop Policies</b></A>
-								</P>
-
-								<P>
-									<A href="docs/Troop161_PlanningCalendar_2019_8-13-18.pdf" target="_blank"><b>Proposed 2019 Calendar</b> </A>
-								</P>
-
-								<!--      <P><A href="docs/smminute.pdf">Scout Master's Minute</A></P>  -->
-								<p><a href="http://s434.photobucket.com/user/t161shoreham/library/" target="_blank">
-          Photos in Photobucket</a></p>
-								<P>
-									<A href="docs/Leadership.pdf">Applying for a Leadership Position</A>
-								</P>
-								<P>
-									<A href="docs/LeadershipcardstR7.doc" target="_blank">Leadership Cards</a>
-								</P>
-								<P>
-									<A href="docs/LeaderHist.pdf">Leadership History</A>
-								</P>
-
-
-								<!-- ****** Scouting Adventure Bases and Camps ****** -->
-								<P class=category>Scouting Adventure Bases &amp; Camps</P>
-								<P>
-									<A href="http://philmontscoutranch.org/">Philmont Scout Ranch</A>
-								</P>
-								<P>
-									<A href="http://www.bsaseabase.org/">Florida Sea Base</A>
-								</P>
-								<P>
-									<A href="http://www.ntier.org/">Northern Tier Base</A>
-								</P>
-								<p><a href="http://www.summitbsa.org/">Summit Bechtel Reserve</a></p>
-								<P>
-									<A href="http://www.baitinghollowscoutcamp.org/">Baiting Hollow Scout Camp</A>
-								</P>
-								<P>
-									<A href="https://www.yawgoog.org/">Camp Yawgoog</A>
-								</P>
-
-
-								<!-- ****** Other Information and Links ****** -->
-								<P class=category>Other Information &amp; Links</P>
-
-								<p>
-									<A href="http://shorehampack161.tripod.com" target="_blank">Cub Scout Pack 161</A>
-									<p><a href="docs/20110302_tour_plan.pdf">Tour Plan Rules</a></p>
-									<p><a href="docs/TourPlan.pdf" target="_blank">Tour Plan Form</a></p>
-									<p><a href="docs/HealthForm.pdf" target="_blank">Annual Health Form</a></p>
-									<p><a href="https://myscouting.scouting.org/_layouts/MyScouting/login.aspx?ReturnUrl=%2f_layouts%2fAuthenticate.aspx%3fSource%3d%252f&Source=%2f">Adult Leader Training</a></p>
-									<p><a href="https://boyslife.org/">Boys' Life Magazine</a></p>
-									<p><a href="https://boyslife.org/video-audio/644/learn-to-tie-knots/" target="_blank">
-         Boys' Life Knot Tying</a></p>
-									<P>
-										<A href="https://www.scouter.com/" target="_blank">Scouter Network</A>
-									</P>
-
-				</DIV>
-			</TD>
-
-			<td id=content style="PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px;
-	PADDING-TOP: 15px" width="600">
-				<h2 style="margin-left: 20">Boy Scout Troop 161 Shoreham, NY</h2>
-
-				<table border="0" cellpadding="0" cellspacing="0" width=600>
-					<tr>
-						<td width="420">
-							<img src="pics/1.jpg" name='SlideShow' width="400" align="left" border=1 alt="Slide Show Loading, Please Wait..." style="margin-left:20; margin-top: 15">
-						</td>
-
-						<td width=160>
-							<p class=boxed style="font-size: 100%; margin-top: 15"><b>The Scout Oath</b><br>
-								<em>On my honor I will do my best to do my duty to God and my country and to obey the Scout Law;
-        to help other people at all times; to keep myself physically strong, mentally awake,
-        and morally straight.</em><br>&nbsp;<br>
-								<b>The Scout Law</b><br>
-								<em>A Scout is: Trustworthy, Loyal, Helpful, Friendly, Courteous, Kind, Obedient, Cheerful,
-	  Thrifty, Brave, Clean, and Reverent.</em></p>
-						</td>
-					</tr>
-					<tr>
-						<td width="600" colspan="2">
-							<P style="margin-left: 20">Troop 161 was first chartered in 1958, and is currently supported by the
-								<A href="http://www.rockypointfd.com/content/company3/">Shoreham Fire Company</A>
-								<script type="application/ld+json">
-									{
-										"@context": "http://schema.org",
-										"@type": "Organization",
-										"@id": "http://www.rockypointfd.com/content/company3/#organization",
-										"url": "http://www.rockypointfd.com/content/company3/",
-										"name": "Shoreham Fire Company 3",
-										"logo": "http://www.unyquefiretrucks.com/Rocky_Point_files/shapeimage_3.png",
-										"foundingDate": "1930-10-31",
-										"location": [{
-												"@type": "PostalAddress",
-												"name": "Shoreham Fire Company 3 mailing address",
-												"addressLocality": "Shoreham",
-												"addressRegion": "NY",
-												"postalCode": "11786",
-												"streetAddress": "PO Box 970"
-											},
-											{
-													"@type": "Place",
-													"address": {
-														"name": "Shoreham Fire Company 3 physical address",
-														"addressLocality": "Shoreham",
-														"addressRegion": "NY",
-														"postalCode": "11786",
-														"streetAddress": "47 NY Rt. 25A"
-												}
-											}
-										],
-										"description": "Shoreham Fire Company 3 is the Chartered Organization for Troop 161"
-									}
-								</script>
-								<span>.&nbsp; Meetings are held at 7:30 P.M. on Wednesday evenings at the Robert E. Reid, Sr. Recreation Center, Route 25A, Shoreham.</span>&nbsp; The Troop typically has about 60 to 70 boys.&nbsp; Our activities include high adventure trips (week long canoe
-								trips, white water rafting, backpacking, skiing, and others) as well as local camping and hiking.&nbsp; The Troop goes to summer camp at Camp Yawgoog in Rhode Island. </P>
-
-
-							<!-- ****************  Coming Events  ****************** -->
-
-							<h2 style="margin-left: 20"><span title="Updated 8/13/18"><a href="docs/Troop161_PlanningCalendar_2019_8-13-18.pdf">Upcoming Events...</a></span></h2>
-
-							<ul style="margin-top: 5; margin-left: 45">
-								<li vocab="http://schema.org/" class="event-wrapper" typeof="Event"><span property="name"><b>Troop Day Hike 9/30/18</b></span><span property="description" content="Troop Day Hike"></span>, <span property="startDate" content="2018-09-30T07:30">September 30th, Morning Session 7:30 AM</span> to <span property="endDate" content="2018-09-30T13:00"> 1 PM</span>
-									<br>
-									<i style="margin-left: 40">Registration is open on TroopMaster, Greenbelt Trail, Manorville</i>
-									<meta property="image" content="https://www.troop161shoreham.org/img/1200px-Boy_Scouts_of_America_corporate_trademark.svg" />
-									<div property="performer" typeof="Organization">
-											<meta propery="sameAs" content="https://www.troop161shoreham.org/#organization" />
-											<meta property="name" content="Boy Scout Troop 161 Shoreham, NY" />
-									</div>
-									<div class="event-venue" property="location" typeof="Place">
-										<span property="name" content="Shoreham-Wading River High School"></span>
-										<div class="address" property="address" typeof="PostalAddress">
-											<meta property="streetAddress" content="250A NY-25A"/>
-											<meta property="addressLocality" content="Shoreham"/>
-											<meta property="addressRegion" content="NY"/>
-											<meta property="postalCode" content="11786"/>
-											<meta property="description" content="Meeting place for the hike." />
-										</div>
-									</div>
-									<span property="offers" typeof="offer" />
-										<div class="event-price">
-											<meta property="priceCurrency" content="USD" />
-											<meta property="price" content="0.00" />
-											<meta property="url" content="http://www.troopmasterweb.com/bsatroop161" />
-											<meta property="availability" content="http://schema.org/InStock" />
-											<meta property="validFrom" content="2018-08-16" />
-										</div>
-									</span>
-								</li>
-								<li vocab="http://schema.org/" class="event-wrapper" typeof="Event"><span property="name"><b>Troop Day Hike 9/30/18</b></span><span property="description" content="Troop Day Hike"></span>, <span property="startDate" content="2018-09-30T013:00">September 30th, Afternoon Session 1 PM</span> to <span property="endDate" content="2018-09-30T18:30"> 5:30 PM</span>
-									<br>
-									<i style="margin-left: 40">Registration is open on TroopMaster, Greenbelt Trail, Manorville</i>
-									<meta property="image" content="https://www.troop161shoreham.org/img/1200px-Boy_Scouts_of_America_corporate_trademark.svg" />
-									<div property="performer" typeof="Organization">
-											<meta propery="sameAs" content="https://www.troop161shoreham.org/#organization" />
-											<meta property="name" content="Boy Scout Troop 161 Shoreham, NY" />
-									</div>
-									<div class="event-venue" property="location" typeof="Place">
-										<span property="name" content="Shoreham-Wading River High School"></span>
-										<div class="address" property="address" typeof="PostalAddress">
-											<meta property="streetAddress" content="250A NY-25A"/>
-											<meta property="addressLocality" content="Shoreham"/>
-											<meta property="addressRegion" content="NY"/>
-											<meta property="postalCode" content="11786"/>
-											<meta property="description" content="Meeting place for the hike." />
-										</div>
-									</div>
-									<span property="offers" typeof="offer" />
-										<div class="event-price">
-											<meta property="priceCurrency" content="USD" />
-											<meta property="price" content="0.00" />
-											<meta property="url" content="http://www.troopmasterweb.com/bsatroop161" />
-											<meta property="availability" content="http://schema.org/InStock" />
-											<meta property="validFrom" content="2018-08-16" />
-										</div>
-									</span>
-								</li>
-								<li vocab="http://schema.org/" class="event-wrapper" typeof="Event"><span property="name"><b>Troop/PLC Meeting 10/3/18</b></span><span property="description" content="Troop Meeting 10/3/18"></span>, <span property="startDate" content="2018-10-03T19:30">October 3rd, 7:30 PM</span> to <span property="endDate" content="2018-10-03T21:00">9:30 PM</span>
-									<br>
-									<i style="margin-left: 40">There will be a PLC meeting following the troop meeting</i>
-									<br>
-									<i style="margin-left: 40">Merit Badge session on emergency preparedness (Part 1 of 2)</i>
-									<meta property="image" content="https://www.troop161shoreham.org/img/1200px-Boy_Scouts_of_America_corporate_trademark.svg" />
-									<div property="performer" typeof="Organization">
-											<meta propery="sameAs" content="https://www.troop161shoreham.org/#organization" />
-											<meta property="name" content="Boy Scout Troop 161 Shoreham, NY" />
-									</div>
-									<div class="event-venue" property="location" typeof="Place">
-										<span property="name" content="Robert Reid Recreations Center"></span>
-										<div class="address" property="address" typeof="PostalAddress">
-											<meta property="streetAddress" content="Defense Hill Road"/>
-											<meta property="addressLocality" content="Shoreham"/>
-											<meta property="addressRegion" content="NY"/>
-											<meta property="postalCode" content="11786"/>
-											<meta property="description" content="Meeting place for troop meetings and departure point for some trips." />
-										</div>
-									</div>
-									<span property="offers" typeof="offer" />
-										<div class="event-price">
-											<meta property="priceCurrency" content="USD" />
-											<meta property="price" content="0.00" />
-											<meta property="url" content="http://www.troopmasterweb.com/bsatroop161" />
-											<meta property="availability" content="http://schema.org/InStock" />
-											<meta property="validFrom" content="2018-08-16" />
-										</div>
-									</span>
-								</li>
-								<li vocab="http://schema.org/" class="event-wrapper" typeof="Event"><span property="name"><b>Troop Meeting 10/10/18</b></span><span property="description" content="Troop Meeting 10/10/18"></span>, <span property="startDate" content="2018-10-10T19:30">October 10th, 7:30 PM</span> to <span property="endDate" content="2018-10-10T21:00">9:00 PM</span>
-									<br>
-									<i style="margin-left: 40">There will be a Committee meeting during the Troop meeting (7:45 PM to 8:45 PM)</i>
-									<br>
-									<i style="margin-left: 40">Merit Badge session on emergency preparedness (Part 2 of 2)</i>
-									<meta property="image" content="https://www.troop161shoreham.org/img/1200px-Boy_Scouts_of_America_corporate_trademark.svg" />
-									<div property="performer" typeof="Organization">
-											<meta propery="sameAs" content="https://www.troop161shoreham.org/#organization" />
-											<meta property="name" content="Boy Scout Troop 161 Shoreham, NY" />
-									</div>
-									<div class="event-venue" property="location" typeof="Place">
-										<span property="name" content="Robert Reid Recreations Center"></span>
-										<div class="address" property="address" typeof="PostalAddress">
-											<meta property="streetAddress" content="Defense Hill Road"/>
-											<meta property="addressLocality" content="Shoreham"/>
-											<meta property="addressRegion" content="NY"/>
-											<meta property="postalCode" content="11786"/>
-											<meta property="description" content="Meeting place for troop meetings and departure point for some trips." />
-										</div>
-									</div>
-									<span property="offers" typeof="offer" />
-										<div class="event-price">
-											<meta property="priceCurrency" content="USD" />
-											<meta property="price" content="0.00" />
-											<meta property="url" content="http://www.troopmasterweb.com/bsatroop161" />
-											<meta property="availability" content="http://schema.org/InStock" />
-											<meta property="validFrom" content="2018-08-16" />
-										</div>
-									</span>
-								</li>
-								<li vocab="http://schema.org/" typeof="Event"><span property="name"><b>BT Fall Camporee</b></span><span property="description" content="BT Fall Camporee"></span>, <span property="startDate" content="2018-10-12T16:45">October 12th, 4:45 PM</span> to <span property="endDate" content="2018-10-14T11:00">October 14, 11 AM</span>
-									<br>
-									<i style="margin-left: 40">Fireman's Park (Ridge)</i>
-									<meta property="image" content="https://www.troop161shoreham.org/img/1200px-Boy_Scouts_of_America_corporate_trademark.svg" />
-									<div property="performer" typeof="Organization">
-											<meta propery="sameAs" content="https://www.troop161shoreham.org/#organization" />
-											<meta property="name" content="Boy Scout Troop 161 Shoreham, NY" />
-									</div>
-									<div class="event-venue" property="location" typeof="Place">
-										<span property="name" content="Robert Reid Recreations Center"></span>
-										<div class="address" property="address" typeof="PostalAddress">
-											<meta property="streetAddress" content="Defense Hill Road"/>
-											<meta property="addressLocality" content="Shoreham"/>
-											<meta property="addressRegion" content="NY"/>
-											<meta property="postalCode" content="11786"/>
-											<meta property="description" content="Meeting place for troop meetings and departure point for some trips." />
-										</div>
-									</div>
-									<span property="offers" typeof="offer" />
-										<div class="event-price">
-											<meta property="priceCurrency" content="USD" />
-											<meta property="price" content="35.00" />
-											<meta property="url" content="http://www.troopmasterweb.com/bsatroop161" />
-											<meta property="availability" content="http://schema.org/InStock" />
-											<meta property="validFrom" content="2018-09-03" />
-										</div>
-									</span>
-								</li>
-								<li vocab="http://schema.org/" typeof="Event"><span property="name"><b>West Point Orienteering</b></span><span property="description" content="Orienteering at West Point Military Academy"></span>, <span property="startDate" content="2018-10-13T08:30">October 13th</span> to <span property="endDate" content="2018-10-14T12:00">October 14th</span>
-									<meta property="image" content="https://www.troop161shoreham.org/img/1200px-Boy_Scouts_of_America_corporate_trademark.svg" />
-									<div property="performer" typeof="Organization">
-											<meta propery="sameAs" content="https://www.troop161shoreham.org/#organization" />
-											<meta property="name" content="Boy Scout Troop 161 Shoreham, NY" />
-									</div>
-									<div class="event-venue" property="location" typeof="Place">
-										<span property="name" content="Robert Reid Recreations Center"></span>
-										<div class="address" property="address" typeof="PostalAddress">
-											<meta property="streetAddress" content="Defense Hill Road"/>
-											<meta property="addressLocality" content="Shoreham"/>
-											<meta property="addressRegion" content="NY"/>
-											<meta property="postalCode" content="11786"/>
-											<meta property="description" content="Meeting place for troop meetings and departure point for some trips." />
-										</div>
-									</div>
-									<span property="offers" typeof="offer" />
-										<div class="event-price">
-											<meta property="priceCurrency" content="USD" />
-											<meta property="price" content="65.00" />
-											<meta property="url" content="http://www.troopmasterweb.com/bsatroop161" />
-											<meta property="availability" content="http://schema.org/InStock" />
-											<meta property="validFrom" content="2018-09-03" />
-										</div>
-									</span>
-								</li>
-								<li vocab="http://schema.org/" typeof="Event"><span property="name"><b>18th Annual Hither Hills Campout</b></span><span property="description" content="18th Annual Hither Hills Steak and Lobster Cook Out"></span>, <span property="startDate" content="2018-10-27T08:30">October 27th</span> to <span property="endDate" content="2018-10-28T12:00">October 28th</span>
-									<br>
-									<i style="margin-left: 40">Details and registration pending</i>
-									<meta property="image" content="https://www.troop161shoreham.org/img/1200px-Boy_Scouts_of_America_corporate_trademark.svg" />
-									<div property="performer" typeof="Organization">
-											<meta propery="sameAs" content="https://www.troop161shoreham.org/#organization" />
-											<meta property="name" content="Boy Scout Troop 161 Shoreham, NY" />
-									</div>
-									<div class="event-venue" property="location" typeof="Place">
-										<span property="name" content="Robert Reid Recreations Center"></span>
-										<div class="address" property="address" typeof="PostalAddress">
-											<meta property="streetAddress" content="Defense Hill Road"/>
-											<meta property="addressLocality" content="Shoreham"/>
-											<meta property="addressRegion" content="NY"/>
-											<meta property="postalCode" content="11786"/>
-											<meta property="description" content="Meeting place for troop meetings and departure point for some trips." />
-										</div>
-									</div>
-									<span property="offers" typeof="offer" />
-										<div class="event-price">
-											<meta property="priceCurrency" content="USD" />
-											<meta property="price" content="65.00" />
-											<meta property="url" content="http://www.troopmasterweb.com/bsatroop161" />
-											<meta property="availability" content="http://schema.org/InStock" />
-											<meta property="validFrom" content="2018-09-03" />
-										</div>
-									</span>
-								</li>
-								<li vocab="http://schema.org/" typeof="Event"><span property="name"><b>BT Webelos Woods</b></span><span property="description" content="BT Webelos Woods"></span>, <span property="startDate" content="2018-11-02T016:45">November 2nd</span> to <span property="endDate" content="2018-11-04T12:00">November 4th</span>
-									<br>
-									<i style="margin-left: 40">Please register promptly. Registration details must be in to council by 10/11.</i>
-									<meta property="image" content="https://www.troop161shoreham.org/img/1200px-Boy_Scouts_of_America_corporate_trademark.svg" />
-									<div property="performer" typeof="Organization">
-											<meta propery="sameAs" content="https://www.troop161shoreham.org/#organization" />
-											<meta property="name" content="Boy Scout Troop 161 Shoreham, NY" />
-									</div>
-									<div class="event-venue" property="location" typeof="Place">
-										<span property="name" content="Baiting Hollow Scout Camp"></span>
-										<div class="address" property="address" typeof="PostalAddress">
-											<meta property="streetAddress" content="1774 Sound Ave"/>
-											<meta property="addressLocality" content="Calverton"/>
-											<meta property="addressRegion" content="NY"/>
-											<meta property="postalCode" content="11933"/>
-											<meta property="description" content="Baiting Hollow Scout Camp" />
-										</div>
-									</div>
-									<span property="offers" typeof="offer" />
-										<div class="event-price">
-											<meta property="priceCurrency" content="USD" />
-											<meta property="price" content="0.00" />
-											<meta property="url" content="http://www.troopmasterweb.com/bsatroop161" />
-											<meta property="availability" content="http://schema.org/InStock" />
-											<meta property="validFrom" content="2018-09-27" />
-										</div>
-									</span>
-								</li>
-							</ul>
-							<P class=boxed style="font-size: 100%; margin-left: 20; margin-top: 35">
-								<B>Purpose of the <a vocab="http://schema.org" typeof="Organization" property="name" content="Boy Scouts of America" href="https://www.scouting.org">BSA<span property="url" content="https://www.scouting.org"></span></a></B> - The Boy Scouts of America was incorporated to provide a program for community organizations that offers effective character, citizenship, and personal fitness training for youth.<br>&nbsp;<br> Specifically, the BSA endeavors to develop American
-								citizens who are physically, mentally, and emotionally fit; have a high degree of self-reliance as evidenced in such qualities as initiative, courage, and resourcefulness; have personal values based on religious concepts; have the desire and skills
-								to help others; understand the principles of the American social, economic, and governmental systems; are knowledgeable about and take pride in their American heritage and understand our nation's role in the world; have a keen respect for the
-								basic rights of all people; and are prepared to participate in and give leadership to American society.
-							</P>
-
-							<br>
-
-							<!-- Include Facebook link to the troop facebook page, offer like/share as well -->
-							<p style="margin-left: 20">Follow us on Facebook:</p>
-							<iframe class="h3" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FTroop161ShorehamNY%2F&tabs=timeline&width=400&height=70&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId"
+          <div class="col-lg-6 background order-lg-2 order-1 wow fadeInRight">
+            <!-- Include Facebook link to the troop facebook page, offer like/share as well -->
+            <!-- to be cleaned up -->
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+              <p padding-top="140px" align="center"><b>Follow us on Facebook:</b></p>
+            <p align="center">
+				<iframe align="top" class="h3" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FTroop161ShorehamNY%2F&tabs=timeline&width=400&height=70&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId"
 								width="400"
 								height="160"
 								style="border:none;margin-left:110"
@@ -794,86 +306,754 @@
 								frameborder="0"
 								allowTransparency="true"
 								allow="encrypted-media">
-							</iframe>
+				</iframe> 
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- #about -->
+
+    <!--==========================
+      Facts Section
+    ============================-->
+<!--    <section id="facts">
+      <div class="container wow fadeIn">
+        <div class="section-header">
+          <h3 class="section-title">Facts</h3>
+          <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+        </div>
+        <div class="row counters">
+
+  				<div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up">232</span>
+            <p>Clients</p>
+  				</div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up">521</span>
+            <p>Projects</p>
+  				</div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up">1,463</span>
+            <p>Hours Of Support</p>
+  				</div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up">15</span>
+            <p>Hard Workers</p>
+  				</div>
+
+  			</div>
+
+      </div>
+    </section>
+    <!-- #facts -->
+      
+    <!--==========================
+      Events Section
+    ============================-->
+    <section id="events">
+      <div class="container wow fadeIn">
+        <div class="section-header">
+          <h3 class="section-title">Upcoming Events</h3>
+          <p class="section-description">Details on upcoming events are listed below:</p>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="box">
+              <div class="icon"><i class="fa fa-calendar"></i></div>
+              <h4 class="title">Troop/PLC Meeting</h4>
+              <h6>October 3rd 7:30 PM to 9:30 PM</h6>
+              <p class="description">Special session and activities are planned at the Baiting Hollow Scout Camp.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="box">
+              <div class="icon"><i class="fa fa-calendar"></i></div>
+              <h4 class="title">Troop/Committee Meeting</h4>
+              <h6>October 10th 7:30 PM to 9:00 PM</h6>
+              <p class="description">There will be a Committee meeting (7:45 PM to 8:45 PM). There will also be a Merit Badge session on Emergency Preparedness (Part 2 of 2).</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="box">
+              <div class="icon"><i class="fa fa-fire"></i></div>
+                <h4 class="title">BT Fall Camporee</h4>
+                <h6>October 12th 4:45 PM - 14th 11 AM</h6>
+              <p class="description">The Benjamin Tallmadge District Fall Camporee will be held at Fireman's Park in Ridge.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="box">
+              <div class="icon"><i class="fa fa-fire"></i></div>
+              <h4 class="title">West Point Orienteering</h4>
+              <h6>October 13th to October 14th</h6>
+              <p class="description">The annual West Point Orienteering trip.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="box">
+              <div class="icon"><i class="fa fa-calendar"></i></div>
+              <h4 class="title">Troop Meeting</h4>
+              <h6>October 17th 7:30 PM to 9:00 PM</h6>
+              <p class="description">There is a troop meeting on 10/17 at the Reid Center.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="box">
+              <div class="icon"><i class="fa fa-calendar"></i></div>
+              <h4 class="title">Troop Meeting</h4>
+              <h6>October 24th 7:30 PM to 9:00 PM</h6>
+              <p class="description">There is a troop meeting on 10/17 at the Reid Center.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="box">
+              <div class="icon"><i class="fa fa-fire"></i></div>
+              <h4 class="title">18th Annual Hither Hills Campout</h4>
+              <h6>October 27th to October 28th</h6>
+              <p class="description">The 18th annual Hither Hills cookout.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="box">
+              <div class="icon"><i class="fa fa-fire"></i></div>
+              <h4 class="title">Webelos Woods</h4>
+              <h6>November 2nd to November 4th</h6>
+              <p class="description">Annual campout with the Webelos at Camp Schiff.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- #services -->
+
+    <!--==========================
+      Services Section
+    ============================-->
+    <section id="camping">
+      <div class="container wow fadeIn">
+        <div class="section-header">
+          <h3 class="section-title">Camping</h3>
+          <p class="section-description">The troop is active with many scheduled activities including camping, community service and hiking.</p>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="box">
+              <div class="icon"><a href="https://www.sccbsa.org/TB2018FallCamp"><i class="fa fa-fire"></i></a></div>
+              <h4 class="title"><a href="https://www.sccbsa.org/TB2018FallCamp">Camporee Events</a></h4>
+              <p class="description">A camporee is a local or regional gathering of multiple Scouting units for a camping and common activities. There is typically one each season.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+            <div class="box">
+              <div class="icon"><a href="http://www.yawgoog.org/"><i class="fa fa-compass"></i></a></div>
+              <h4 class="title"><a href="http://www.yawgoog.org/">Camp Yawgoog</a></h4>
+                <p class="description">The troop goes to summer camp at <a href="http://www.yawgoog.org/">Camp Yawgoog</a> in Rhode Island.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+            <div class="box">
+              <div class="icon"><a href="http://philmontscoutranch.org/"><i class="fa fa-anchor"></i></a></div>
+              <h4 class="title"><a href="http://philmontscoutranch.org/">High Adventure Camps</a></h4>
+                <p class="description">The troop is active with high adventure camps and attended <a href="http://www.bsaseabase.org/">Sea Base</a> this year. Next year the troop will attend <a href="http://philmontscoutranch.org/">Philmont Scout Ranch</a>.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="box">
+              <div class="icon"><i class="fa fa-bicycle"></i></div>
+              <h4 class="title">Day Trips</h4>
+              <p class="description">The troop also goes on day trips including cycling, rock climbing, ice clibming, skiing, ice skating and others.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+            <div class="box">
+              <div class="icon"><a href=""><i class="fa fa-road"></i></a></div>
+              <h4 class="title"><a href="">Skills Weekend</a></h4>
+              <p class="description">Each year in March, the entire troop has a skills weekend event at Camp Schiff. This is key trip of the season and is a pre-requisite for new scouts to attend other camping trips.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+            <div class="box">
+              <div class="icon"><a href="https://colbsa.org/activities-2/pilgrimage-and-encampment-2/"><i class="fa fa-globe"></i></a></div>
+              <h4 class="title"><a href="https://colbsa.org/activities-2/pilgrimage-and-encampment-2/">Special Trips</a></h4>
+                <p class="description">The troop also has special camping trips as well, including Annapolis, <a href="https://colbsa.org/activities-2/pilgrimage-and-encampment-2/">Valley Forge</a>, the Delaware River for canoeing and other historic destinations.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- #services -->
+      
+      <!--==========================
+      About Us Section
+    ============================-->
+    <section id="eagle">
+      <div class="container">
+        <div class="row about-container">
+
+          <div class="col-lg-11 content order-lg-1 order-2">
+            <h2 class="title">Troop 161 Eagle Scouts</h2>
+            <p>
+              The fact that a boy is an Eagle Scout has always carried with it a special significance, not only in Scouting but also as he enters higher education, business or industry, and community service. The award is a performance-based achievement whose standards have been well-maintained over the years. Not every boy who joins a Boy Scout troop earns the Eagle Scout rank; only about 5 percent of all Boy Scouts do so. This represents more than 1 million Boy Scouts who have earned the rank since 1911. Nevertheless, the goals of Scouting citizenship training, character development, and personal fitness remain important for all Scouts, whether or not they attain the Eagle Scout rank.
+            </p>
+            <p style="background: #fff">See the press release from Councilwoman Jane Bonner and Assemblyman Anthony Palumbo who were in attendance for our August 11th Eagle Court of Honor for Patrick Lane; Brian Hernandez; Anthony Bitalvo; Gabriel Kent; Rocco Ricca; Liam Clifford and Liam Hudson:<br>
+				<a href="https://www.brookhavenny.gov/CivicAlerts.aspx?aid=754" style="padding-left: 20">August 14, 2018, Councilwoman Bonner Joins Assemblyman Palumbo at Eagle Court of Honor for Troop 161 in Shoreham</a>
+            </p>
+	<table width="100%" style="background: white border: red 1px solid">
+							<tr><td>Name</td><td>Date of Eagle Board of Review</td></tr>
+						  <tr><td colspan=2><hr></td></tr>
+						  <tr><td>Richard Parsons</td><td> October 16, 1968</td></tr>
+						  <tr><td>Dale Schweyer</td><td> October 16, 1968</td></tr>
+						  <tr><td>Edward Gaias, Jr.</td><td> August 20, 1969</td></tr>
+						  <tr><td>Henry Linn</td><td> January 28, 1972</td></tr>
+						  <tr><td>James Kenny</td><td> June 19, 1973</td></tr>
+						  <tr><td>Richard Bloom, Jr.</td><td> February 7, 1974</td></tr>
+						  <tr><td>Kenneth Erickson</td><td> November 3, 1977</td></tr>
+						  <tr><td>Eric Fritsch</td><td> October 11, 1987</td></tr>
+						  <tr><td>David Henriquez</td><td> November 13, 1987</td></tr>
+						  <tr><td>Jonathan Spice</td><td> November 13, 1987</td></tr>
+						  <tr><td>Jeffrey DiBartolomeo</td><td> March 13, 1989</td></tr>
+						  <tr><td>Gabriel Torres</td><td> March 13, 1989</td></tr>
+						  <tr><td>Keith DeGregory</td><td> November 26, 1990</td></tr>
+						  <tr><td>Kenneth Maloney</td><td> May 21, 1990</td></tr>
+						  <tr><td>Jeremy Silver</td><td> January 1, 1991</td></tr>
+						  <tr><td>Seth Silver</td><td> January 1, 1991</td></tr>
+						  <tr><td>Kenneth O'Donnell</td><td> June 5, 1994</td></tr>
+						  <tr><td>Petersen Curt</td><td> August 1, 1995</td></tr>
+						  <tr><td>Joseph Falcetta</td><td> November 14, 1996</td></tr>
+						  <tr><td>Brian Aloisio</td><td> March 10, 1997</td></tr>
+						  <tr><td>Kevin Parsons</td><td> November 7, 1997</td></tr>
+						  <tr><td>Edward P. Libassi</td><td> January 13, 1998</td></tr>
+						  <tr><td>Matthew Danowski</td><td> February 24, 1999</td></tr>
+						  <tr><td>Peter Aloisio</td><td> May 27, 1999</td></tr>
+						  <tr><td>Eric Schantz</td><td> June 22, 2000</td></tr>
+						  <tr><td>Mark Gill</td><td> October 30, 2000</td></tr>
+						  <tr><td>Eric Lipinsky</td><td> May 10, 2001</td></tr>
+						  <tr><td>Robert Marfoglio</td><td> August 28, 2001</td></tr>
+						  <tr><td>Gregory Jehle</td><td> April 10, 2002</td></tr>
+						  <tr><td>Kenneth Barry</td><td> June 5, 2002</td></tr>
+						  <tr><td>Joseph Pagani</td><td> June 5, 2002</td></tr>
+						  <tr><td>Ryan Murray</td><td> July 18, 2002</td></tr>
+						  <tr><td>Jason Aloisio</td><td> October 25, 2002</td></tr>
+						  <tr><td>Patrick Parsons</td><td> October 25, 2002</td></tr>
+						  <tr><td>Jonathan Walter</td><td> November 4, 2002</td></tr>
+						  <tr><td>Navindra Ramharack</td><td> November 4, 2002</td></tr>
+						  <tr><td>Adam Lipinsky</td><td> July 2, 2003</td></tr>
+						  <tr><td>Chris Johnson</td><td> October 13, 2003</td></tr>
+						  <tr><td>Kenneth Harasym, Jr.</td><td> August 17, 2004</td></tr>
+						  <tr><td>William Gramlich</td><td> November 22, 2004</td></tr>
+						  <tr><td>John Kneisel</td><td> October 12, 2005</td></tr>
+						  <tr><td>Charles Vail</td><td>December 21, 2005</td></tr>
+						  <tr><td>Ryan Walter</td><td>December 28, 2005</td></tr>
+						  <tr><td>Evan Brengel</td><td>August 14, 2006</td></tr>
+						  <tr><td>Steven Rossin</td><td>September 28, 2006</td></tr>
+						  <tr><td>Matthew Palmer</td><td>October 23, 2006</td></tr>
+						  <tr><td>Brendan Wood</td><td>January 15, 2007</td></tr>
+						  <tr><td>Cassidy Vail</td><td>June 28, 2007</td></tr>
+						  <tr><td>Daniel Beacon</td><td>December 22, 2008</td></tr>
+						  <tr><td>Kyle McElhone</td><td>April 6, 2009</td></tr>
+						  <tr><td>Christopher Barry</td><td>April 8, 2009</td></tr>
+						  <tr><td>Andrew Rossin</td><td>April 13, 2010</td></tr>
+						  <tr><td>John Kilmartin</td><td>June 14, 2010</td></tr>
+						  <tr><td>Patrick Sullivan</td><td>June 17, 2010</td></tr>
+						  <tr><td>Dylan Lynch</td><td>June 21, 2010</td></tr>
+						  <tr><td>Timothy Murphy</td><td>July 22, 2010</td></tr>
+						  <tr><td>Daniel Klemfuss</td><td>February 10, 2011</td></tr>
+						  <tr><td>Carll Johnson</td><td>February 15, 2011</td></tr>
+						  <tr><td>Anthony Franze</td><td>February 17, 2011</td></tr>
+						  <tr><td>Michael Kelly, Jr.</td><td>January 24, 2013</td></tr>
+						  <tr><td>John Colwell</td><td>January 28, 2013</td></tr>
+						  <tr><td>Robert W. Kohlus</td><td>November 14, 2013</td></tr>
+						  <tr><td>Joseph A. Desiderio</td><td>November 19, 2013</td></tr>
+						  <tr><td>Gavin Davis</td><td>December 17, 2013</td></tr>
+						  <tr><td>Christopher Klein</td><td>December 18, 2013</td></tr>
+						  <tr><td>Peter Stirpe</td><td>January 4, 2014</td></tr>
+						  <tr><td>Patrick Biemer</td><td>January 7, 2014</td></tr>
+						  <tr><td>Liam G. Lane</td><td>December 9, 2014</td></tr>
+						  <tr><td>Sean Scarbrough</td><td>December 15, 2014</td></tr>
+						  <tr><td>William R. McCarrick</td><td>January 5, 2015 </td></tr>
+						  <tr><td>Matthew Epp</td><td>January 6, 2015 </td></tr>
+						  <tr><td>Seth Mohl</td><td>January 7, 2015 </td></tr>
+						  <tr><td>Nicholas A. Serdock</td><td>August 3, 2015 </td></tr>
+						  <tr><td>Nicholas S. Maritato</td><td>September 1, 2015 </td></tr>
+						  <tr><td>Erick R. Idtensohn</td><td>September 1, 2015 </td></tr>
+						  <tr><td>John B. McCarrick</td><td>November 4, 2015 </td></tr>
+						  <tr><td>Ryan M. DiLisio</td><td>November 4, 2015 </td></tr>
+						  <tr><td>Bryan J. Verbeeck</td><td>November 16, 2015 </td></tr>
+						  <tr><td>Ryan I. Field</td><td>November 16, 2015 </td></tr>
+						  <tr><td>Matthew J Corona</td><td>November 30, 2015 </td></tr>
+						  <tr><td>William T. Loper</td><td>April 26, 2016</td></tr>
+						  <tr><td>Kyle J. Wrigley</td><td>May 24, 2016</td></tr>
+						  <tr><td>Vincent H. Uzzi</td><td>May 24, 2016</td></tr>
+						  <tr><td>Noah D. Blunnie</td><td>July 27, 2016</td></tr>
+						  <tr><td>Tyler Tilden Offutt</td><td>February 21, 2017</td></tr>
+						  <tr><td>Ryan Thomas Doolan</td><td>February 28, 2017</td></tr>
+						  <tr><td>Dominic Joseph Vesely</td><td>April 11, 2017</td></tr>
+						  <tr><td>Ryan Michael Ledda</td><td>April 18, 2017</td></tr>
+						  <tr><td>Charles John Vesely</td><td>April 25, 2017</td></tr>
+						  <tr><td>Anthony J. Bitalvo</td><td>April 23, 2018</td></tr>
+							<tr><td>Liam J. Clifford</td><td>April 30, 2018</td></tr>
+							<tr><td>Brian P. Hernandez</td><td>June 13 30, 2018</td></tr>
+							<tr><td>Liam E. Hudson</td><td>January 8, 2018</td></tr>
+							<tr><td>Gabriel J. Kent</td><td>April 30, 2018</td></tr>
+							<tr><td>Patrick M. Lane</td><td>April 23, 2018</td></tr>
+							<tr><td>Rocco J. Ricca</td><td>June 13, 2018</td></tr>
+							<tr>
+								<td colspan=2>
+									<hr>
+								</td>
+							</tr>
+						</table>
+
+          </div>
+
+          <div class="col-lg-11 background order-lg-2 order-1 wow fadeInRight"></div>
+        </div>
+
+      </div>
+    </section><!-- #eagle -->
 
 
-							<p style="margin-left: 20"><b>Active Scouts and Leaders:</b></br> Request an invite to the closed Facebook group for Scouts and Leaders <a href="https://www.facebook.com/groups/129230997629690">here</a>.</p>
+    <!--==========================
+    Call To Action Section
+    ============================-->
+    <section id="call-to-action">
+      <div class="container wow fadeIn">
+        <div class="row">
+          <div class="col-lg-9 text-center text-lg-left">
+            <h3 class="cta-title">Join Us</h3>
+            <p class="cta-text"> Meetings are held at 7:30 P.M. on Wednesday evenings at the Robert E. Reid, Sr. Recreation Center, Route 25A, Shoreham. Come join us or reach out using the contact form below.</p>
+          </div>
+          <div class="col-lg-3 cta-btn-container text-center">
+            <a class="cta-btn align-middle" href="#contact">Call To Action</a>
+          </div>
+        </div>
 
-							<P class=printhide style="margin-left: 20">
-								<A href="#top">
-									<IMG height=20 alt="Top of Page" src="img/uparrow_gray.jpg" width=21 border=0>
-								</A>
-							</P>
+      </div>
+    </section><!-- #call-to-action -->
 
-							<!-- json-ld for Scoutmaster text and sd -->
-							<P style="margin-left: 20">The Troop 161 Scoutmaster is Matthew Yakaboski
-								<script type="application/ld+json">
-									{
-										"@context": "http://schema.org",
-										"@type": "Person",
-										"@id": "https://www.troop161shoreham.org/#scoutmaster",
-										"name": "Matthew Yakaboski",
-										"jobTitle": "Scoutmaster",
-										"description": "the adult leader of a troop of Boy Scouts",
-										"affiliation": {
-											"@type": "Organization",
-											"url": "https://www.troop161shoreham.org",
-											"name": "Boy Scout Troop 161 Shoreham, NY"
-										}
-									}
-								</script>
-								</br>
+    <!--==========================
+      Portfolio Section
+    ============================-->
+   <!-- <section id="portfolio">
+      <div class="container wow fadeInUp">
+        <div class="section-header">
+          <h3 class="section-title">Portfolio</h3>
+          <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+        </div>
+        <div class="row">
 
-								<!-- json-ld for webmaster text and sd -->
-								This page is maintained by <a href="mailto:michael.eyring@icloud.com">Michael Eyring</a>
-								<script type="application/ld+json">
-									{
-										"@context": "http://schema.org",
-										"@type": "Person",
-										"@id": "https://www.troop161shoreham.org/#webmaster",
-										"name": "Michael Eyring",
-										"jobTitle": "Webmaster",
-										"description": "maintains the troop website",
-										"affiliation": {
-											"@type": "Organization",
-											"url": "https://www.troop161shoreham.org",
-											"name": "Boy Scout Troop 161 Shoreham, NY"
-										}
-									}
-								</script>
-								<br>
+          <div class="col-lg-12">
+            <ul id="portfolio-flters">
+              <li data-filter=".filter-app, .filter-card, .filter-logo, .filter-web" class="filter-active">All</li>
+              <li data-filter=".filter-app">App</li>
+              <li data-filter=".filter-card">Card</li>
+              <li data-filter=".filter-logo">Logo</li>
+              <li data-filter=".filter-web">Web</li>
+            </ul>
+          </div>
+        </div>
 
-								<!-- json-ld for webpage and modification reference (text + sd) -->
-							  <span>Last Update: September 27, 2018
-									<script type="application/ld+json">
-										{
-											"@context": "http://schema.org",
-											"@id": "https://www.troop161shoreham.com/#webpage",
-											"@type": "WebPage",
-											"url": "https://www.troop161shoreham.com/index.html",
-											"name": "Boy Scout Troop 161 Shoreham",
-											"dateModified": "2018-09-27"
-										}
-									</script>
-								</span>
-							</p>
-						</td>
-					</tr>
-				</table>
-			</td>
-		</tr>
-	</table>
+        <div class="row" id="portfolio-wrapper">
+          <div class="col-lg-3 col-md-6 portfolio-item filter-app">
+            <a href="">
+              <img src="img/portfolio/app1.jpg" alt="">
+              <div class="details">
+                <h4>App 1</h4>
+                <span>Alored dono par</span>
+              </div>
+            </a>
+          </div>
 
-	<!-- json-ld for website data -->
-	<script type="application/ld+json">
-		{
-			"@context": "http://schema.org",
-			"@id": "https://www.troop161shoreham.com/#website",
-			"@type": "WebSite",
-			"url": "https://www.troop161shoreham.com/",
-			"name": "Boy Scout Troop 161 Shoreham"
-		}
-	</script>
-<!--	<div class="h2" data-href="https://www.facebook.com/groups/129230997629690/" data-width="280" data-show-social-context="true" data-show-metadata="false"></div> -->
+          <div class="col-lg-3 col-md-6 portfolio-item filter-web">
+            <a href="">
+              <img src="img/portfolio/web2.jpg" alt="">
+              <div class="details">
+                <h4>Web 2</h4>
+                <span>Alored dono par</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-app">
+            <a href="">
+              <img src="img/portfolio/app3.jpg" alt="">
+              <div class="details">
+                <h4>App 3</h4>
+                <span>Alored dono par</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-card">
+            <a href="">
+              <img src="img/portfolio/card1.jpg" alt="">
+              <div class="details">
+                <h4>Card 1</h4>
+                <span>Alored dono par</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-card">
+            <a href="">
+              <img src="img/portfolio/card2.jpg" alt="">
+              <div class="details">
+                <h4>Card 2</h4>
+                <span>Alored dono par</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-web">
+            <a href="">
+              <img src="img/portfolio/web3.jpg" alt="">
+              <div class="details">
+                <h4>Web 3</h4>
+                <span>Alored dono par</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-card">
+            <a href="">
+              <img src="img/portfolio/card3.jpg" alt="">
+              <div class="details">
+                <h4>Card 3</h4>
+                <span>Alored dono par</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-app">
+            <a href="">
+              <img src="img/portfolio/app2.jpg" alt="">
+              <div class="details">
+                <h4>App 2</h4>
+                <span>Alored dono par</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-logo">
+            <a href="">
+              <img src="img/portfolio/logo1.jpg" alt="">
+              <div class="details">
+                <h4>Logo 1</h4>
+                <span>Alored dono par</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-logo">
+            <a href="">
+              <img src="img/portfolio/logo3.jpg" alt="">
+              <div class="details">
+                <h4>Logo 3</h4>
+                <span>Alored dono par</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-web">
+            <a href="">
+              <img src="img/portfolio/web1.jpg" alt="">
+              <div class="details">
+                <h4>Web 1</h4>
+                <span>Alored dono par</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-logo">
+            <a href="">
+              <img src="img/portfolio/logo2.jpg" alt="">
+              <div class="details">
+                <h4>Logo 2</h4>
+                <span>Alored dono par</span>
+              </div>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- #portfolio -->
+
+    <!--==========================
+      Team Section
+    ============================-->
+<!--    <section id="team">
+      <div class="container wow fadeInUp">
+        <div class="section-header">
+          <h3 class="section-title">Team</h3>
+          <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-md-6">
+            <div class="member">
+              <div class="pic"><img src="img/team-1.jpg" alt=""></div>
+              <h4>Walter White</h4>
+              <span>Chief Executive Officer</span>
+              <div class="social">
+                <a href=""><i class="fa fa-twitter"></i></a>
+                <a href=""><i class="fa fa-facebook"></i></a>
+                <a href=""><i class="fa fa-google-plus"></i></a>
+                <a href=""><i class="fa fa-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="member">
+              <div class="pic"><img src="img/team-2.jpg" alt=""></div>
+              <h4>Sarah Jhinson</h4>
+              <span>Product Manager</span>
+              <div class="social">
+                <a href=""><i class="fa fa-twitter"></i></a>
+                <a href=""><i class="fa fa-facebook"></i></a>
+                <a href=""><i class="fa fa-google-plus"></i></a>
+                <a href=""><i class="fa fa-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="member">
+              <div class="pic"><img src="img/team-3.jpg" alt=""></div>
+              <h4>William Anderson</h4>
+              <span>CTO</span>
+              <div class="social">
+                <a href=""><i class="fa fa-twitter"></i></a>
+                <a href=""><i class="fa fa-facebook"></i></a>
+                <a href=""><i class="fa fa-google-plus"></i></a>
+                <a href=""><i class="fa fa-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="member">
+              <div class="pic"><img src="img/team-4.jpg" alt=""></div>
+              <h4>Amanda Jepson</h4>
+              <span>Accountant</span>
+              <div class="social">
+                <a href=""><i class="fa fa-twitter"></i></a>
+                <a href=""><i class="fa fa-facebook"></i></a>
+                <a href=""><i class="fa fa-google-plus"></i></a>
+                <a href=""><i class="fa fa-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- #team -->
+
+    <!--==========================
+      Contact Section
+    ============================-->
+    <section id="contact">
+      <div class="container wow fadeInUp">
+        <div class="section-header">
+          <h3 class="section-title">Contact</h3>
+          <p class="section-description">The form is not active yet, please use the hello@troop161shoreham.org email address in the meantime. The address below is where we meet on Wednesday evenings at 7:30PM.</p>
+        </div>
+      </div>
+
+      <!-- Uncomment below if you wan to use dynamic maps -->
+      <!-- <div id="google-map" data-latitude="40.945623" data-longitude="-72.870423"></div> -->
+
+      <div class="container wow fadeInUp">
+        <div class="row justify-content-center">
+
+          <div class="col-lg-3 col-md-4">
+
+            <div class="info">
+              <div>
+                <i class="fa fa-map-marker"></i>
+                <p>Defense Hill Rd<br>Shoreham, NY 11786</p>
+              </div>
+
+              <div>
+                <i class="fa fa-envelope"></i>
+                <p>hello@troop161shoreham.org</p>
+              </div>
+   
+            </div>
+
+
+          </div>
+
+          <div class="col-lg-5 col-md-8">
+            <div class="form">
+               <form action="" method="post" role="form" class="contactForm">
+                <div class="form-group">
+                  <input type="text" name="firstname" class="form-control" id="firstname" placeholder="Your First Name" />
+                </div>
+                <div class="form-group">
+                  <input type="text" name="lastname" class="form-control" id="lastname" placeholder="Your Last Name" />
+                </div>
+                <div class="form-group">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"  />
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" name="phone" id="phone" placeholder="Your Phone" />
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" />
+                </div>
+                <div class="form-group">
+                  <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                </div>
+                <div class="text-center"><button id='submit' type="submit" >Send Message</button></div>
+<!--                   <script type="text/javascript">
+                              $(document).ready(function() {
+                                $("#submit").on('click', function(e) {
+                                        e.preventDefault();
+                                        var URL = "https://5ve3jtt881.execute-api.us-east-1.amazonaws.com/default/contactForm";
+
+                                        var Namere = /[A-Za-z]{1}[A-Za-z]/;
+                                        if (!Namere.test($("#firstname").val())) {
+                                          alert("First name can not be less than 2 char");
+                                          return;
+                                        }
+                                        var mobilere = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
+                                        
+                                        if ($("#email").val() == "") {
+                                          alert("Please enter your email id");
+                                          return;
+                                        }
+
+                                        var reeamil = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,6})?$/;
+                                        if (!reeamil.test($("#email").val())) {
+                                          alert("Please enter a valid email address");
+                                          return;
+                                        }
+
+                                        var form_firstname = $("#firstname").val();
+                                        var form_lastname = $("#lastname").val();
+                                        var form_phone = $("#phone").val();
+                                        var form_email = $("#email").val();
+                                        var form_subject = $("#subject").val();
+                                        var form_message = $("#message").val();
+
+                                        $.ajax({
+                                          type: "POST",
+                                          url: "https://5ve3jtt881.execute-api.us-east-1.amazonaws.com/default",
+                                          dataType: "json",
+                                          crossDomain: "true",
+                                          contentType: "application/json",
+                                          data: JSON.stringify({
+                                            'firstname': form_firstname,
+                                            'lastname': form_lastname,
+                                            'phone': form_phone,
+                                            'email': form_email,
+                                            'subject': form_subject,
+                                            'message': form_message
+                                          }),
+
+                                          success: function() {
+                                            // acknowledge success to user. Modal form will reset
+                                            $("#successModal").modal('show');
+                                          },
+                                          error: function() {
+                                            // Note there was an issue and provide instructions. Modal form will reset
+                                            $("#failureModal").modal('show');
+                                          } 
+                                        });
+                                    })
+                              })
+                            </script> -->
+              </form>
+            </div>
+          </div>
+        </div>
+          <br>
+          <br>
+
+      </div>
+     
+    </section><!-- #contact -->
+
+  </main>
+
+  <!--==========================
+    Footer
+  ============================-->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+          <p align="center" style="font-size: 10px">This site is maintained by <a style:"color:indianred" href="mailto:michael.eyring@icloud.com"><u>Michael Eyring</u></a>.</p> 
+      </div>
+    </div>
+
+  </footer><!-- #footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+    <!-- Modal success -->
+  <div id="successModal" class="modal fade">
+    <div class="modal-dialog modal-confirm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="icon">
+                    <i class="material-icons">done</i>
+                </div>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Thank you for your request!</h4>
+            </div>
+            <div class="modal-body">
+                <p class="text-center">Your request will be reviewed shortly and a response made to the email address or phone number provided.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal"  onclick="document.getElementById('contactForm').reset();">OK</button>
+            </div>
+        </div>
+    </div>
+  </div>
+  <!-- Modal success -->
+  <div id="failureModal" class="modal fade">
+    <div class="modal-dialog modal-confirm-f">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="icon-box">
+                    <i class="material-icons">error</i>
+                </div>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Ooop! An Error Occurred.</h4>
+            </div>
+            <div class="modal-body">
+                <p class="text-center">We are very sorry but an error occurred recieving your request. Please try again. If this occurs again, please send us an email to hello@troop161shoreham.org and we will get back to you.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal"  onclick="document.getElementById('contactForm').reset();">OK</button>
+            </div>
+        </div>
+    </div>
+  </div>
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/counterup/counterup.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+  <!-- Uncomment below if you want to use dynamic Google Maps -->
+  <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8HeI8o-c1NppZA-92oYlXakhDPYR7XMY"></script> -->
+
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+
 </body>
 </html>
