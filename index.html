@@ -99,7 +99,7 @@
   					"@id": "https://www.troop161shoreham.org/index.html",
 						"name": "Troop 161 Homepage"
 					}
-				},
+				}
 			]
 	}
 	</script>
@@ -128,11 +128,12 @@
   <!-- Libraries CSS Files -->
   <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
   <link href="lib/animate/animate.min.css" rel="stylesheet">
-
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" type="text/javascript"></script>
+
 
 </head>
 
@@ -236,7 +237,7 @@
         <p/>
         <p class="nav-menu" style="color:white; padding-left:40px; padding-right:40px">This site is is colored red as part of our Red Ribbon campaign in memory and in support of our fallen Scout, Andrew McMorris. Andrew succumbed to his injuries following a vehicle related incident while hiking.<br>We offer our deepest condolences to the McMorris family and are hanging red ribbons throughout the community in memory of Andrew.</p>
 <p/>
-        <p style="color:white; padding-left:40px; padding-right:40px margin: 0 0 0px 0;"><b>A message from the <a href="https://www.facebook.com/permalink.php?story_fbid=705097253182635&id=100010470993993" style="color:indianred"> McMorris</a> family:</b></p>
+        <p style="color:white; padding-left:40px; padding-right:40px margin: 0 0 0px 0;"><b>A message from the <a href="https://www.facebook.com/permalink.php?story_fbid=705097253182635&id=100010470993993" style="color:indianred"> <u>McMorris</u></a> family:</b></p>
         <p  class="nav-menu" style="color:white; padding-left:40px; padding-right:40px"><i>We have been advised that some people have placed items at the scene of the accident. We ask that you not do so. Andrew and the other injured Scouts are no longer there. We ask that you remember Andrew in your hearts, and not at the scene. It would be an unspeakable tragedy for another person to be injured on the roadside. In Andrew’s memory we ask for prayer, and if you feel the need to do something then tie a red ribbon on your property, and treat others with kindness in his name. </p>
         <p/>
         <p class="nav-menu" style="color:white; padding-left:40px; padding-right:40px">In lieu of flowers the family suggests donations to honor the loving memory of Andrew to support the following organizations:</i></p>
@@ -1007,7 +1008,7 @@
       <div class="container wow fadeInUp">
         <div class="section-header">
           <h3 class="section-title">Contact</h3>
-          <p class="section-description">The form is not active yet, please use the hello@troop161shoreham.org email address in the meantime. The address below is where we meet on Wednesday evenings at 7:30PM.</p>
+          <p class="section-description">Please use the form below or the hello@troop161shoreham.org email address to reach out to us. Or come join us on Wednesday nights at 7:30 PM at the address below.</p>
         </div>
       </div>
 
@@ -1037,7 +1038,7 @@
 
           <div class="col-lg-5 col-md-8">
             <div class="form">
-               <form action="" method="post" role="form" class="contactForm">
+               <form action="" method="post" role="form" class="contactForm" id="contactForm">
                 <div class="form-group">
                   <input type="text" name="firstname" class="form-control" id="firstname" placeholder="Your First Name" />
                 </div>
@@ -1054,9 +1055,9 @@
                   <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" />
                 </div>
                 <div class="form-group">
-                  <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                  <textarea class="form-control" name="contactmessage" id="contactmessage" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
                 </div>
-                <div class="text-center"><button id='submit' type="submit" >Send Message</button></div>
+                <div class="text-center"><button id='submit' >Send Message</button></div>
                 <script type="text/javascript">
                               $(document).ready(function() {
                                 $("#submit").on('click', function(e) {
@@ -1086,11 +1087,11 @@
                                         var form_phone = $("#phone").val();
                                         var form_email = $("#email").val();
                                         var form_subject = $("#subject").val();
-                                        var form_message = $("#message").val();
+                                        var form_message = $("#contactmessage").val();
 
                                         $.ajax({
                                           type: "POST",
-                                          url: "https://5ve3jtt881.execute-api.us-east-1.amazonaws.com/default",
+                                          url: URL,
                                           dataType: "json",
                                           crossDomain: "true",
                                           contentType: "application/json",
@@ -1181,7 +1182,7 @@
     <div class="modal-dialog modal-confirm">
         <div class="modal-content">
             <div class="modal-header">
-                <div class="icon">
+                <div class="icon-box">
                     <i class="material-icons">done</i>
                 </div>
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
@@ -1229,10 +1230,7 @@
   <!-- Uncomment below if you want to use dynamic Google Maps -->
   <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8HeI8o-c1NppZA-92oYlXakhDPYR7XMY"></script> -->
 
-  <!-- Contact Form JavaScript File -->
-  <script src="contactform/contactform.js"></script>
-
-  <!-- Template Main Javascript File -->
+   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
 
 </body>
