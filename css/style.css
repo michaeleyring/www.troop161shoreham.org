@@ -14,13 +14,18 @@ body {
 }
 
 a {
-  color: blue;
+  color: indianred;
 }
 
-a:hover, a:active, a:focus {
+a:active, a:focus {
   color: #2dca98;
   outline: none;
   text-decoration: none;
+}
+
+a:hover {
+ text-decoration: underline; 
+ color:red;
 }
 
 p {
@@ -1042,7 +1047,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #contact .info i:hover {
-  background: white;
+
   color: indianred;
 }
 #contact .info p {
