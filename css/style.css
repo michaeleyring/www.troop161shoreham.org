@@ -18,7 +18,7 @@ a {
 }
 
 a:active, a:focus {
-  color: #2dca98;
+  color: red;
   outline: none;
   text-decoration: none;
 }
@@ -102,8 +102,15 @@ h1, h2, h3, h4, h5, h6 {
   float: left;
 }
 
+#header #logo a {
+  font-size= 18px;
+  color:white;
+  position: relative;
+  top: -15px;
+}
+
 #header #logo h1 {
-  font-size: 36px;
+  /*font-size: 36px;*/
   margin: 0;
   padding: 6px 0;
   line-height: 1;
@@ -120,13 +127,21 @@ h1, h2, h3, h4, h5, h6 {
 #header #logo img {
   padding: 0;
   margin: 0;
+  max-height:90px;
+  position:relative;
+  top: 10px;
+  z-index:10;
 }
 
 @media (max-width: 768px) {
   #header #logo h1 {
     font-size: 26px;
   }
+  #header #logo a {
+    top: 0px;      
+  }
   #header #logo img {
+    top: 0px;
     max-height: 40px;
   }
 }
@@ -254,6 +269,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .nav-menu li {
   position: relative;
+  top: 15px;
   white-space: nowrap;
 }
 
