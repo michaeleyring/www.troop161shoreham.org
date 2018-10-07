@@ -696,7 +696,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #facts .counters span {
   font-size: 48px;
   display: block;
-  color: white;
+  color: red;
 }
 
 #facts .counters p {
