@@ -259,7 +259,7 @@
     <section id="about">
       <div class="container">
         <div class="row about-container">
-          <div class="col-lg-6 content order-lg-1 order-1">
+          <div class="col-lg-5 content order-lg-1 order-1">
             <h2 class="title">About Us</h2>
             <p>
                 Troop 161 was first chartered in 1958, and is currently supported by the <A href="http://www.rockypointfd.com/content/company3/">Shoreham Fire Company</A>.
@@ -333,13 +333,13 @@
 
           </div>
 
-          <div class="col-lg-6 content order-lg-2 order-2 wow fadeInRight">
+          <div class="col-lg-5 content order-lg-1 order-2 wow fadeInRight">
             <!-- Include Facebook link to the troop facebook page, offer like/share as well -->
             <!-- to be cleaned up -->
             <img src="img/5.jpg">
             <p/>
-            <p style="padding-bottom:0"><b>Follow us on Facebook:</b></p>
-            <iframe style="padding-top:0" align="top" class="h3" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FTroop161ShorehamNY%2F&tabs=timeline&width=400&height=70&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId"
+           <p style="padding-bottom:0"><b>Follow us on Facebook:</b></p>
+           <iframe style="padding-top:0" align="top" class="h3" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FTroop161ShorehamNY%2F&tabs=timeline&width=400&height=70&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId"
 								width="400"
 								height="160"
 								style="border:none;margin-left:110"
@@ -347,7 +347,7 @@
 								frameborder="0"
 								allowTransparency="true"
 								allow="encrypted-media">
-            </iframe> 
+            </iframe>
           </div>
         </div>
 
@@ -359,48 +359,52 @@
     ============================-->
     <section id="facts">
       <div class="container wow fadeIn">
+          <div class="container wow">
         <div class="section-header">
           <h3 class="section-title">Troop 161 Stats</h3>
           <p class="section-description">A few stats regarding the troop and recent activities:</p>
         </div>
         <div class="row counters">
             <div class="col-lg-3 col-6 text-center">
-               <span data-toggle="counter-up">25</span>
+               <span >25</span>
                <p>Adult Leaders</p>
             </div>
             <div class="col-lg-3 col-6 text-center">
-               <span data-toggle="counter-up">27</span>
+               <span >27</span>
                <p>Trips Planned<br>(this year)</p>
             </div>
             <div class="col-lg-3 col-6 text-center">
-               <span data-toggle="counter-up">53</span>
+               <span >53</span>
                <p>Current Scouts</p>
             </div>
             <div class="col-lg-3 col-6 text-center">
-               <span data-toggle="counter-up">96</span>
+               <span >96</span>
                <p>Eagle Scouts</p>
             </div>
        </div>
-       <div class="row counters">
-            <div class="col-lg-3 col-6 text-center">
-                <span data-toggle="counter-up">18,078</span></span>
-               <p>Troop 161 Memorial Fund<br>(dollars raised)</p>
-            </div>
-            <div class="col-lg-3 col-6 text-center">
-               <span data-toggle="counter-up">18,706</span>
-               <p>Name an AA 787 after Andrew<br>(petitioners)</p>
-            </div>
-            <div class="col-lg-3 col-6 text-center">
-               <span data-toggle="counter-up">4</span>
-               <p>Musical instruments played by Andrew McMorris</p>
-            </div>
-            <div class="col-lg-3 col-6 text-center">
-               <span data-toggle="counter-up">3</span>
-               <p>Trips planned for the next 30 days</p>
-            </div>
+       
+       <div class="row counters" id="myDiv">
+           </span>
+            <script type="text/javascript">
+            $(document).ready(function() {
+              function callAwsLambdaFunction() {
+                var xhttp = new XMLHttpRequest();
+                var obj;
+                xhttp.onreadystatechange = function() {
+                  if (this.readyState == 4 && this.status == 200) {
+                     obj = JSON.parse(this.responseText);
+                     document.getElementById("myDiv").innerHTML = obj.body;
+                  }
+                };
+                xhttp.open("GET", "https://9dcsdzvb0a.execute-api.us-east-1.amazonaws.com/default/Scrape-Gofundme-dev-getgofundme", true);
+                xhttp.send();
+              }
+              callAwsLambdaFunction();
+            });
+            </script>
        </div>
       </div>
-    </section>
+    </section> 
     <!-- #facts -->
       
     <!--==========================
