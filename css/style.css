@@ -605,6 +605,15 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-size: 14px;
 }
 
+/* Carousel */
+.carousel-inner > .item >img{
+  height: 200px;
+  width: 150px;
+  min-height : 200px;
+  max-height : 480px;
+  width : 50%;
+}
+
 /* Eagle
 --------------------------------*/
 #eagle {
